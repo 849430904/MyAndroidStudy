@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>WiFiFixedSSIDSetupModel Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/deviceSSIDName">deviceSSIDName</option>
+		
+		<option value="//api/name/ssidName">ssidName</option>
+		
+		<option value="//api/name/ssidPassword">ssidPassword</option>
+		
+		<option value="//api/name/ssidSecurity">ssidSecurity</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/confirmConnectionWithSuccess:failure:">- confirmConnectionWithSuccess:failure:</option>
+		
+		<option value="//api/name/connectDeviceWithSuccess:failure:">- connectDeviceWithSuccess:failure:</option>
+		
+		<option value="//api/name/connectToDeviceWithSSID:success:failure:">- connectToDeviceWithSSID:success:failure:</option>
+		
+		<option value="//api/name/disconnectFromDeviceSSIDWithSuccess:failure:">- disconnectFromDeviceSSIDWithSuccess:failure:</option>
+		
+		<option value="//api/name/getDeviceCandidateWithSuccess:failure:">- getDeviceCandidateWithSuccess:failure:</option>
+		
+		<option value="//api/name/registerDevice:success:failure:">- registerDevice:success:failure:</option>
+		
+		<option value="//api/name/scanForAccessPointsWithSuccess:failure:">- scanForAccessPointsWithSuccess:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">WiFiFixedSSIDSetupModel Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/WiFiSetupModel.html">WiFiSetupModel</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>WiFiFixedSSIDSetupModel.h<br />WiFiFixedSSIDSetupModel.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Model object used for Fixed SSID setup and registration.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/connectToDeviceWithSSID:success:failure:" title="connectToDeviceWithSSID:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectToDeviceWithSSID:success:failure:">&ndash;&nbsp;connectToDeviceWithSSID:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Connects to device&rsquo;s SSID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectToDeviceWithSSID:(NSString *)<em>deviceSSID</em> success:(void ( ^ ) ( AylaSetupDevice *setupDevice ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceSSID</code></th>
+						<td><p>Device&rsquo;s fixed SSID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Block executed on successful connection to device&rsquo;s SSID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block executed if connection to device&rsquo;s SSID fails with error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Connects to device&rsquo;s SSID.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectDeviceWithSuccess:failure:" title="connectDeviceWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectDeviceWithSuccess:failure:">&ndash;&nbsp;connectDeviceWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Connects device to discovered WiFi network.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectDeviceWithSuccess:(void ( ^ ) ( void ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Block executed on successful connection to WiFi network</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block executed if connection to WiFi network fails with error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Connects device to discovered WiFi network.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmConnectionWithSuccess:failure:" title="confirmConnectionWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmConnectionWithSuccess:failure:">&ndash;&nbsp;confirmConnectionWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Confirms device&rsquo;s connection to discovered WiFi network.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)confirmConnectionWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Block executed on successful connection confirmation</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block executed if connection confirmation fails with error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Confirms device&rsquo;s connection to discovered WiFi network.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeviceCandidateWithSuccess:failure:" title="getDeviceCandidateWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceCandidateWithSuccess:failure:">&ndash;&nbsp;getDeviceCandidateWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches registration candidate,</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDeviceCandidateWithSuccess:(void ( ^ ) ( AylaRegistrationCandidate *candidate ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Block executed after successfully fetching registration candidate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block executed if fetching registration candidate fails with error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches registration candidate,</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerDevice:success:failure:" title="registerDevice:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerDevice:success:failure:">&ndash;&nbsp;registerDevice:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Registers device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerDevice:(AylaRegistrationCandidate *)<em>candidate</em> success:(void ( ^ ) ( AylaDevice *device ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>candidate</code></th>
+						<td><p>AylaRegistrationCandidate object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Block executed on successful device registration</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block executed if device registration fails with error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Registers device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scanForAccessPointsWithSuccess:failure:" title="scanForAccessPointsWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scanForAccessPointsWithSuccess:failure:">&ndash;&nbsp;scanForAccessPointsWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Scans for access points visible to device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)scanForAccessPointsWithSuccess:(void ( ^ ) ( AylaWifiScanResults *scanResults ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block which passes AylaWifiScanResults on successful scan completion</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>block with passed in error if scan fails</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Scans for access points visible to device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disconnectFromDeviceSSIDWithSuccess:failure:" title="disconnectFromDeviceSSIDWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disconnectFromDeviceSSIDWithSuccess:failure:">&ndash;&nbsp;disconnectFromDeviceSSIDWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disconnects from device SSID so phone can join default network.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disconnectFromDeviceSSIDWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Block executed on successful disconnection</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Block executed if disconnection fails with error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Disconnects from device SSID so phone can join default network.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ssidName" title="ssidName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ssidName">&nbsp;&nbsp;ssidName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SSID name of AP for fixed SSID setup</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *ssidName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SSID name of AP for fixed SSID setup</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ssidSecurity" title="ssidSecurity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ssidSecurity">&nbsp;&nbsp;ssidSecurity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SSID security of AP for fixed SSID setup</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *ssidSecurity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SSID security of AP for fixed SSID setup</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ssidPassword" title="ssidPassword"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ssidPassword">&nbsp;&nbsp;ssidPassword</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SSID password of AP for fixed SSID setup</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *ssidPassword</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SSID password of AP for fixed SSID setup</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceSSIDName" title="deviceSSIDName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceSSIDName">&nbsp;&nbsp;deviceSSIDName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SSID name of device being setup for fixed SSID setup</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *deviceSSIDName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SSID name of device being setup for fixed SSID setup</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">WiFiFixedSSIDSetupModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALContactManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/hasContacts">hasContacts</option>
+		
+		<option value="//api/name/ownerContact">ownerContact</option>
+		
+		<option value="//api/name/sessionManager">sessionManager</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/contactAtIndex:">- contactAtIndex:</option>
+		
+		<option value="//api/name/contactWithId:success:failure:">- contactWithId:success:failure:</option>
+		
+		<option value="//api/name/createContact">- createContact</option>
+		
+		<option value="//api/name/createContactFromABRecordRef:">- createContactFromABRecordRef:</option>
+		
+		<option value="//api/name/createContactFromContact:">- createContactFromContact:</option>
+		
+		<option value="//api/name/deleteContact:success:failure:">- deleteContact:success:failure:</option>
+		
+		<option value="//api/name/indexOfContact:">- indexOfContact:</option>
+		
+		<option value="//api/name/numberOfContacts">- numberOfContacts</option>
+		
+		<option value="//api/name/objectAtIndexedSubscript:">- objectAtIndexedSubscript:</option>
+		
+		<option value="//api/name/objectForKeyedSubscript:">- objectForKeyedSubscript:</option>
+		
+		<option value="//api/name/refreshContactsWithSuccess:failure:">- refreshContactsWithSuccess:failure:</option>
+		
+		<option value="//api/name/saveContact:success:failure:">- saveContact:success:failure:</option>
+		
+		<option value="//api/name/updateOwnerContact:success:failure:">- updateOwnerContact:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALContactManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALContactManager.h<br />ALContactManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Creates and manages the contacts for the session.</p>
+
+<p>The contact manager is supported by a memory cache, when you first create or fetch a contact the data will be
+available inmediatly for subsequent calls. The cache can be manually updated if you call the
+<a href="#//api/name/refreshContactsWithSuccess:failure:"><code>refreshContactsWithSuccess:failure:</code></a> method on this class, the
+method will update all the objects in the cache</p>
+
+<p>To enumerate the contacts you must first call <a href="#//api/name/refreshContactsWithSuccess:failure:"><code>refreshContactsWithSuccess:failure:</code></a> to update the cache, after that
+<a href="#//api/name/hasContacts"><code>hasContacts</code></a> will return YES, then you
+can use the <a href="#//api/name/numberOfContacts"><code>numberOfContacts</code></a> property to find out how many contacts exist and <code>contactAtIndex:success:failure:</code> to
+retrieve them.</p>
+
+<p>The class also implements subscritped access, so <code>contactManager[0]</code> will return the first contact, but also calling
+<code>contactManager[contactKey]</code> is possible.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createContact" title="createContact"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createContact">&ndash;&nbsp;createContact</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an instance of <code>ALContact</code>, you must call <a href="#//api/name/saveContact:success:failure:"><code>saveContact:success:failure:</code></a> to persist the changes in the
+cloud.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaContact *)createContact</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of ALContact.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates an instance of <code>ALContact</code>, you must call <a href="#//api/name/saveContact:success:failure:"><code>saveContact:success:failure:</code></a> to persist the changes in the
+cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createContactFromABRecordRef:" title="createContactFromABRecordRef:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createContactFromABRecordRef:">&ndash;&nbsp;createContactFromABRecordRef:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an instance of <code>ALContact</code> from the information contained in <code>person</code>, you must call
+<a href="#//api/name/saveContact:success:failure:"><code>saveContact:success:failure:</code></a> to persist the changes in the cloud.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (ALImportedContact *)createContactFromABRecordRef:(ABRecordRef)<em>person</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>person</code></th>
+						<td><p>An ABRecordRef obtained from the phone.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of ALContact initialized with the person information.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates an instance of <code>ALContact</code> from the information contained in <code>person</code>, you must call
+<a href="#//api/name/saveContact:success:failure:"><code>saveContact:success:failure:</code></a> to persist the changes in the cloud.</p>
+
+<p>This method has been deprecated in favor of <a href="#//api/name/createContactFromContact:"><code>createContactFromContact:</code></a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createContactFromContact:" title="createContactFromContact:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createContactFromContact:">&ndash;&nbsp;createContactFromContact:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an instance of <code>ALContact</code> from the information contained in <code>person</code>, you must call
+<code>saveWithSuccess:failure:</code> on it to persist the changes in the cloud.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (ALImportedContact *)createContactFromContact:(CNContact *)<em>person</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>person</code></th>
+						<td><p>An CNContact obtained from the phone.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of ALContact initialized with the person information.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates an instance of <code>ALContact</code> from the information contained in <code>person</code>, you must call
+<code>saveWithSuccess:failure:</code> on it to persist the changes in the cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteContact:success:failure:" title="deleteContact:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteContact:success:failure:">&ndash;&nbsp;deleteContact:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes a contact from the cloud and cache.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteContact:(AylaContact *)<em>contact</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contact</code></th>
+						<td><p>The contact to delete</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the contact has been deleted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the method failed to delete the contact. Takes an NSError describing the problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes a contact from the cloud and cache.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contactWithId:success:failure:" title="contactWithId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contactWithId:success:failure:">&ndash;&nbsp;contactWithId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the contact with the given <code>contactId</code>, first by looking in the cache, if it doesn&rsquo;t exist, it fetches the
+contact from the cloud. Subsequent calls will return the object from the cache. You can refresh the cached object by
+calling the method <code>refreshWithSuccess:failure:</code> on the <code>ALContact</code> instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)contactWithId:(NSNumber *)<em>contactId</em> success:(void ( ^ ) ( AylaContact *))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contactId</code></th>
+						<td><p>The id of the requested contact.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the contact is ready from cache.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the method failed to retrieve the contact. Takes an NSError describing the
+problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Gets the contact with the given <code>contactId</code>, first by looking in the cache, if it doesn&rsquo;t exist, it fetches the
+contact from the cloud. Subsequent calls will return the object from the cache. You can refresh the cached object by
+calling the method <code>refreshWithSuccess:failure:</code> on the <code>ALContact</code> instance.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/refreshContactsWithSuccess:failure:">- refreshContactsWithSuccess:failure:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshContactsWithSuccess:failure:" title="refreshContactsWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshContactsWithSuccess:failure:">&ndash;&nbsp;refreshContactsWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refreshes or gets all <a href="#//api/name/contacts">contacts</a> and updates them in the cache.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refreshContactsWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the contact cache has been refreshed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the method failed to refresh the contact. Takes an NSError describing the
+problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Refreshes or gets all <a href="#//api/name/contacts">contacts</a> and updates them in the cache.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contactAtIndex:" title="contactAtIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contactAtIndex:">&ndash;&nbsp;contactAtIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the contact at the given index from all the <a href="#//api/name/contacts">contacts</a>. This method works from the contact cache, it will return
+nil if the cache is empty, call <a href="#//api/name/refreshContactsWithSuccess:failure:">refreshContactsWithSuccess:failure:</a> first to get the contact list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaContact *)contactAtIndex:(NSInteger)<em>index</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The index of the requested contact.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The ALContact at the specified index</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Gets the contact at the given index from all the <a href="#//api/name/contacts">contacts</a>. This method works from the contact cache, it will return
+nil if the cache is empty, call <a href="#//api/name/refreshContactsWithSuccess:failure:">refreshContactsWithSuccess:failure:</a> first to get the contact list.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/refreshContactsWithSuccess:failure:">- refreshContactsWithSuccess:failure:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/indexOfContact:" title="indexOfContact:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/indexOfContact:">&ndash;&nbsp;indexOfContact:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the index of the specified contact.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)indexOfContact:(AylaContact *)<em>contact</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contact</code></th>
+						<td><p>The contact to get the index of.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSInteger of the contact position.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the index of the specified contact.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfContacts" title="numberOfContacts"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfContacts">&ndash;&nbsp;numberOfContacts</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates the number of <a href="#//api/name/contacts">contacts</a> in the cache; you can retrieve or refresh all the cached <a href="#//api/name/contacts">contacts</a> by calling
+<a href="#//api/name/refreshContactsWithSuccess:failure:"><code>refreshContactsWithSuccess:failure:</code></a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfContacts</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates the number of <a href="#//api/name/contacts">contacts</a> in the cache; you can retrieve or refresh all the cached <a href="#//api/name/contacts">contacts</a> by calling
+<a href="#//api/name/refreshContactsWithSuccess:failure:"><code>refreshContactsWithSuccess:failure:</code></a></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/refreshContactsWithSuccess:failure:">- refreshContactsWithSuccess:failure:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectForKeyedSubscript:" title="objectForKeyedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectForKeyedSubscript:">&ndash;&nbsp;objectForKeyedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the contact with a matching Id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaContact *)objectForKeyedSubscript:(NSNumber *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>contact id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The contact with a matching id</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the contact with a matching Id</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectAtIndexedSubscript:" title="objectAtIndexedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectAtIndexedSubscript:">&ndash;&nbsp;objectAtIndexedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the object at index</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaContact *)objectAtIndexedSubscript:(NSInteger)<em>idx</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>idx</code></th>
+						<td><p>index of the contact</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The contact at the specified index</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the object at index</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveContact:success:failure:" title="saveContact:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveContact:success:failure:">&ndash;&nbsp;saveContact:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates or updates a new contact in the cloud, based on if the contact does have an id, if it doesn&rsquo;t the manager
+will create it, all subsecuent calls to his method will update the contact.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveContact:(AylaContact *)<em>contact</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contact</code></th>
+						<td><p>An ALContact to create or update.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called after a successful creation or update.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when an error occurs. Takes a single NSError parameter describing the problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates or updates a new contact in the cloud, based on if the contact does have an id, if it doesn&rsquo;t the manager
+will create it, all subsecuent calls to his method will update the contact.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateOwnerContact:success:failure:" title="updateOwnerContact:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateOwnerContact:success:failure:">&ndash;&nbsp;updateOwnerContact:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the owner contact information</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateOwnerContact:(AylaUser *)<em>account</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>account</code></th>
+						<td><p>The ALAccount of the owner.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the owner contact has been updated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the method failed to update the contact. Takes an NSError describing the
+problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the owner contact information</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/hasContacts" title="hasContacts"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasContacts">&nbsp;&nbsp;hasContacts</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates wether the cache has been initialized or not</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL hasContacts</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates wether the cache has been initialized or not</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ownerContact" title="ownerContact"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ownerContact">&nbsp;&nbsp;ownerContact</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the record for the owner.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) AylaContact *ownerContact</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the record for the owner.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionManager" title="sessionManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionManager">&nbsp;&nbsp;sessionManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The sessionManager owning this instance.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic, readonly) AylaSessionManager *sessionManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The sessionManager owning this instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALContactManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

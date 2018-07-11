@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALHomeKitSetupManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/accessoryBrowser">accessoryBrowser</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/startWithHomeKitParameters:delegate:">+ startWithHomeKitParameters:delegate:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/accessoryWithAccessoryName:">- accessoryWithAccessoryName:</option>
+		
+		<option value="//api/name/addNewAccessory:toHome:completionBlock:">- addNewAccessory:toHome:completionBlock:</option>
+		
+		<option value="//api/name/addNewAccessory:toHome:room:completionBlock:">- addNewAccessory:toHome:room:completionBlock:</option>
+		
+		<option value="//api/name/configureWiFiAccessory:withUIViewController:">- configureWiFiAccessory:withUIViewController:</option>
+		
+		<option value="//api/name/discoveredAccessories">- discoveredAccessories</option>
+		
+		<option value="//api/name/start">- start</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/unconfiguredAccessories">- unconfiguredAccessories</option>
+		
+		<option value="//api/name/unconfiguredAccessoryBrowser">- unconfiguredAccessoryBrowser</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALHomeKitSetupManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALHomeKitSetupManager.h<br />ALHomeKitSetupManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Browses and configures new accesories</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/startWithHomeKitParameters:delegate:" title="startWithHomeKitParameters:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithHomeKitParameters:delegate:">+&nbsp;startWithHomeKitParameters:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start a new home kit setup manager with <a href="#//api/name/delegate">delegate</a> and home kit <a href="#//api/name/parameters">parameters</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (ALHomeKitSetupManager *)startWithHomeKitParameters:(ALHomeKitParameters *)<em>parameters</em> delegate:(id&lt;ALHomeKitSetupManagerDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>To-be-applied home kit <a href="#//api/name/parameters">parameters</a>. May be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Delegate of new home kit setup manager. May bi nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Created home kit setup manager. It&rsquo;s embeded accessory browser will <a href="#//api/name/start">start</a> searching automatically.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Start a new home kit setup manager with <a href="#//api/name/delegate">delegate</a> and home kit <a href="#//api/name/parameters">parameters</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unconfiguredAccessoryBrowser" title="unconfiguredAccessoryBrowser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unconfiguredAccessoryBrowser">&ndash;&nbsp;unconfiguredAccessoryBrowser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unconfigured accessory browser</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (EAWiFiUnconfiguredAccessoryBrowser *)unconfiguredAccessoryBrowser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Unconfigured accessory browser</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start new accessory searching.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Start new accessory searching.</p>
+
+<p>@attention This api will create and start a new accessory browser and replace the old one.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Due to the weird behavior of EAInconfiguredAccessoryBrowser. We could only create one valid unconfigured accessory browser.
+Before it got fixed/confirmed, all ALHomeKitSetupManager have to share one unconfigured accessory browser.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Due to the weird behavior of EAInconfiguredAccessoryBrowser. We could only create one valid unconfigured accessory browser.
+Before it got fixed/confirmed, all ALHomeKitSetupManager have to share one unconfigured accessory browser.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/discoveredAccessories" title="discoveredAccessories"></a>
+	<h3 class="method-title"><code><a href="#//api/name/discoveredAccessories">&ndash;&nbsp;discoveredAccessories</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get discovered accessories</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)discoveredAccessories</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of discovered accessories</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get discovered accessories</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unconfiguredAccessories" title="unconfiguredAccessories"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unconfiguredAccessories">&ndash;&nbsp;unconfiguredAccessories</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get wifi unconfigured accessories</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)unconfiguredAccessories</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of wifi unconfigured accessories</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get wifi unconfigured accessories</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/accessoryWithAccessoryName:" title="accessoryWithAccessoryName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accessoryWithAccessoryName:">&ndash;&nbsp;accessoryWithAccessoryName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the accessory with the specified name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (HMAccessory *)accessoryWithAccessoryName:(NSString *)<em>name</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>Name of the accessory</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Accessoy which matches the input uuid string.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the accessory with the specified name.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/accessoryBrowser" title="accessoryBrowser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accessoryBrowser">&nbsp;&nbsp;accessoryBrowser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Accessory browser</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, readonly, nonatomic) HMAccessoryBrowser *accessoryBrowser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Accessory browser</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate object that will receive the process updates</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) id&lt;ALHomeKitSetupManagerDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Delegate object that will receive the process updates</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addNewAccessory:toHome:completionBlock:" title="addNewAccessory:toHome:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addNewAccessory:toHome:completionBlock:">&ndash;&nbsp;addNewAccessory:toHome:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a new accessory to a home and a room.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addNewAccessory:(HMAccessory *)<em>accessory</em> toHome:(HMHome *)<em>home</em> completionBlock:(void ( ^ ) ( NSError *))<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessory</code></th>
+						<td><p>@param accessory Requested accessory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>home</code></th>
+						<td><p>Home</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>Will be called when api is completed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add a new accessory to a home and a room.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addNewAccessory:toHome:room:completionBlock:" title="addNewAccessory:toHome:room:completionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addNewAccessory:toHome:room:completionBlock:">&ndash;&nbsp;addNewAccessory:toHome:room:completionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a new accessory to a home and a room.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addNewAccessory:(HMAccessory *)<em>accessory</em> toHome:(HMHome *)<em>home</em> room:(HMRoom *)<em>room</em> completionBlock:(void ( ^ ) ( NSError *))<em>completionBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessory</code></th>
+						<td><p>Requested accessory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>home</code></th>
+						<td><p>Home</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>room</code></th>
+						<td><p>Room. This room must be in the Home.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionBlock</code></th>
+						<td><p>Will be called when api is completed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add a new accessory to a home and a room.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureWiFiAccessory:withUIViewController:" title="configureWiFiAccessory:withUIViewController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWiFiAccessory:withUIViewController:">&ndash;&nbsp;configureWiFiAccessory:withUIViewController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configure a wifi accessory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureWiFiAccessory:(EAWiFiUnconfiguredAccessory *)<em>accessory</em> withUIViewController:(UIViewController *)<em>viewController</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessory</code></th>
+						<td><p>Requested accessory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>The view controller that will host the system-provided setup UI in the app. Typically, viewController is the same view controller the app is using to present its user interface at the time it calls this method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configure a wifi accessory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALGroup Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/name">name</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/allDevices">- allDevices</option>
+		
+		<option value="//api/name/createDatapoint:onPropertyNamed:success:failure:">- createDatapoint:onPropertyNamed:success:failure:</option>
+		
+		<option value="//api/name/deviceAtIndex:">- deviceAtIndex:</option>
+		
+		<option value="//api/name/deviceForDSN:">- deviceForDSN:</option>
+		
+		<option value="//api/name/enumerateDevicesWithBlock:">- enumerateDevicesWithBlock:</option>
+		
+		<option value="//api/name/indexOfDevice:">- indexOfDevice:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/numberOfDevices">- numberOfDevices</option>
+		
+		<option value="//api/name/objectAtIndexedSubscript:">- objectAtIndexedSubscript:</option>
+		
+		<option value="//api/name/objectForKeyedSubscript:">- objectForKeyedSubscript:</option>
+		
+		<option value="//api/name/performSelectorOnDevices:withArguments:">- performSelectorOnDevices:withArguments:</option>
+		
+		<option value="//api/name/setDeviceManager:">- setDeviceManager:</option>
+		
+		<option value="//api/name/updateWithDevices:withSuccess:failure:">- updateWithDevices:withSuccess:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALGroup Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/ALDeviceSource.html">ALDeviceSource</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALGroup.h<br />ALGroup.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ALGroup defines a group of <code>ALDevice</code> under a specified <a href="#//api/name/name">name</a>. Currently groups are stored as AylaDatum. Behind the
+scenes ALGroup uses a dictionary stored in an AylaDatum object to serve as index to allow for random access to the
+groups. each group <a href="#//api/name/name">name</a> should is unique and used as means to identify it.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Updating a group" name="task_Updating a group"></a>
+						<h2 class="task-title">Updating a group</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/updateWithDevices:withSuccess:failure:" title="updateWithDevices:withSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateWithDevices:withSuccess:failure:">&ndash;&nbsp;updateWithDevices:withSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the group with the specified array of ALDevices. The array must contain all the devices in the group, not
+just new ones.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateWithDevices:(NSArray *)<em>array</em> withSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>array</code></th>
+						<td><p>The array containing all the devices in the group.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>The block called when the group has been successfully updated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>The block called when something goes wrong.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates the group with the specified array of ALDevices. The array must contain all the devices in the group, not
+just new ones.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroup.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enumerateDevicesWithBlock:" title="enumerateDevicesWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enumerateDevicesWithBlock:">&ndash;&nbsp;enumerateDevicesWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Executes a given block using each object in the array, starting with the first object and continuing through the array
+to the last object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enumerateDevicesWithBlock:(void ( ^ ) ( AylaDevice *device , NSUInteger idx , BOOL *stop ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to apply to elements in the array.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Executes a given block using each object in the array, starting with the first object and continuing through the array
+to the last object.</p>
+
+<p>The block takes three arguments:
+- devcice  The device in the source.
+- idx      The index of the element in the source.
+- stop     A reference to a Boolean value. The block can set the value to YES to stop further processing of the array.
+The stop argument is an out-only argument. You should only ever set this Boolean to YES within the block.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroup.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/performSelectorOnDevices:withArguments:" title="performSelectorOnDevices:withArguments:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/performSelectorOnDevices:withArguments:">&ndash;&nbsp;performSelectorOnDevices:withArguments:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends the selector message to each <code>ALDevice</code> in the source, starting with the first and continuing through the source
+to the last object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)performSelectorOnDevices:(SEL)<em>selector</em> withArguments:(id)<em>device1</em>, <em>...</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>selector</code></th>
+						<td><p>A selector that identifies the message to send to the devices in the source. The method can take multiple arguments, and must not have the side effect of modifying the receiving <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device1</code></th>
+						<td><p>first argument of the selector</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>...</code></th>
+						<td><p>A nil terminated series of objects to send as the arguments to each invocation of the selector method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sends the selector message to each <code>ALDevice</code> in the source, starting with the first and continuing through the source
+to the last object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroup.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createDatapoint:onPropertyNamed:success:failure:" title="createDatapoint:onPropertyNamed:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createDatapoint:onPropertyNamed:success:failure:">&ndash;&nbsp;createDatapoint:onPropertyNamed:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new datapoint in the Ayla Service. This method takes a propertyName parameter which specifies on what
+property will the datapoint be written. If the property is not present in a device in the source it will not be
+affected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createDatapoint:(AylaDatapointParams *)<em>datapoint</em> onPropertyNamed:(NSString *)<em>propertyName</em> success:(void ( ^ ) ( NSDictionary *))<em>success</em> failure:(void ( ^ ) ( NSDictionary *succeeded , NSDictionary *failed ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>datapoint</code></th>
+						<td><p>is the datapoint to be created</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>propertyName</code></th>
+						<td><p>the <a href="#//api/name/name">name</a> of the shared property on all devices.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>would be called with this created datapoint when the request has succeeded.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>would be called with an NSError object when request is failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a new datapoint in the Ayla Service. This method takes a propertyName parameter which specifies on what
+property will the datapoint be written. If the property is not present in a device in the source it will not be
+affected.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroup.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Contains the Group Name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSString *name</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Contains the Group Name.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroup.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/allDevices" title="allDevices"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allDevices">&ndash;&nbsp;allDevices</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array containing all the <code>ALDevice</code> instances in the cache with no particular order.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)allDevices</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An Array of <code>ALDevice</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array containing all the <code>ALDevice</code> instances in the cache with no particular order.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfDevices" title="numberOfDevices"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfDevices">&ndash;&nbsp;numberOfDevices</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the number of devices in this source.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfDevices</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the number of devices in this source.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceAtIndex:" title="deviceAtIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceAtIndex:">&ndash;&nbsp;deviceAtIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the device at the given index</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDevice *)deviceAtIndex:(NSInteger)<em>index</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>the index of the wanted ALDevice.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The ALDevice at the given index.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the device at the given index</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/indexOfDevice:" title="indexOfDevice:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/indexOfDevice:">&ndash;&nbsp;indexOfDevice:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the index of an ALDevice</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)indexOfDevice:(AylaDevice *)<em>device</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>The device to return the index from.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The index of the ALDevice in the source.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the index of an ALDevice</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceForDSN:" title="deviceForDSN:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceForDSN:">&ndash;&nbsp;deviceForDSN:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the ALDevice with the matching DSN.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDevice *)deviceForDSN:(NSString *)<em>dsn</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dsn</code></th>
+						<td><p>The DSN of the wanted device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device with the matching DSN or nil if no match was found.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the ALDevice with the matching DSN.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDeviceManager:" title="setDeviceManager:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDeviceManager:">&ndash;&nbsp;setDeviceManager:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The device manager is the ultimate source of the devices. This property should not be nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDeviceManager:(AylaDeviceManager *)<em>deviceManager</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The device manager is the ultimate source of the devices. This property should not be nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectForKeyedSubscript:" title="objectForKeyedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectForKeyedSubscript:">&ndash;&nbsp;objectForKeyedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a device with the specified DSN</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDevice *)objectForKeyedSubscript:(NSString *)<em>dsn</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dsn</code></th>
+						<td><p>The dsn of the device</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device with the matching DSN</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a device with the specified DSN</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectAtIndexedSubscript:" title="objectAtIndexedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectAtIndexedSubscript:">&ndash;&nbsp;objectAtIndexedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the device at indexPath</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDevice *)objectAtIndexedSubscript:(NSInteger)<em>idx</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>idx</code></th>
+						<td><p>The indexpath of the device</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device at the indexPath</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the device at indexPath</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Deprecations Methods" name="task_Deprecations Methods"></a>
+						<h2 class="task-title">Deprecations Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unavailable</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Unavailable</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Unavailable</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroup.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Thermostat Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/bottomButtonInRect:">+ bottomButtonInRect:</option>
+		
+		<option value="//api/name/drawCanvas2WithFrame:isHeating:isCooling:current:target:minValue:maxValue:currentTextSize:targetTextSize:">+ drawCanvas2WithFrame:isHeating:isCooling:current:target:minValue:maxValue:currentTextSize:targetTextSize:</option>
+		
+		<option value="//api/name/topButtonInRect:">+ topButtonInRect:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Thermostat Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>Thermostat.h<br />Thermostat.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Helper class to draw a control on the current context</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/drawCanvas2WithFrame:isHeating:isCooling:current:target:minValue:maxValue:currentTextSize:targetTextSize:" title="drawCanvas2WithFrame:isHeating:isCooling:current:target:minValue:maxValue:currentTextSize:targetTextSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/drawCanvas2WithFrame:isHeating:isCooling:current:target:minValue:maxValue:currentTextSize:targetTextSize:">+&nbsp;drawCanvas2WithFrame:isHeating:isCooling:current:target:minValue:maxValue:currentTextSize:targetTextSize:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Draws the controls with the specified parameters</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)drawCanvas2WithFrame:(CGRect)<em>frame</em> isHeating:(BOOL)<em>isHeating</em> isCooling:(BOOL)<em>isCooling</em> current:(CGFloat)<em>current</em> target:(CGFloat)<em>target</em> minValue:(CGFloat)<em>minValue</em> maxValue:(CGFloat)<em>maxValue</em> currentTextSize:(CGFloat)<em>currentTextSize</em> targetTextSize:(CGFloat)<em>targetTextSize</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>frame</code></th>
+						<td><p>Frame to fill</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isHeating</code></th>
+						<td><p>YES if the device is heating</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isCooling</code></th>
+						<td><p>YES if the deviec is cooling</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>current</code></th>
+						<td><p>Current temperature</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>Target temperature</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minValue</code></th>
+						<td><p>Minimum temperature to show</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxValue</code></th>
+						<td><p>Maximum temperature to show</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currentTextSize</code></th>
+						<td><p>Current temperature text size</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>targetTextSize</code></th>
+						<td><p>Target temperature text size</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Draws the controls with the specified parameters</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Thermostat.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/topButtonInRect:" title="topButtonInRect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/topButtonInRect:">+&nbsp;topButtonInRect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the Bezier path for a top button in the specified rect</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIBezierPath *)topButtonInRect:(CGRect)<em>rect</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rect</code></th>
+						<td><p>The rect to fill with the button</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the bezier path for the top button within the rect</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the Bezier path for a top button in the specified rect</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Thermostat.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bottomButtonInRect:" title="bottomButtonInRect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bottomButtonInRect:">+&nbsp;bottomButtonInRect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the Bezier path for a bottom button in the specified rect</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIBezierPath *)bottomButtonInRect:(CGRect)<em>rect</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rect</code></th>
+						<td><p>The rect to fill with the button</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the bezier path for the bottom button within the rect</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the Bezier path for a bottom button in the specified rect</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Thermostat.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

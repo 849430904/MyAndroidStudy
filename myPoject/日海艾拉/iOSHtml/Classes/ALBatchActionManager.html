@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALBatchActionManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/batchActionsDatumKey">- batchActionsDatumKey</option>
+		
+		<option value="//api/name/deleteBatchAction:success:failure:">- deleteBatchAction:success:failure:</option>
+		
+		<option value="//api/name/deleteBatchActions:success:failure:">- deleteBatchActions:success:failure:</option>
+		
+		<option value="//api/name/fetchAllActionsPerDeviceWithSuccess:failure:">- fetchAllActionsPerDeviceWithSuccess:failure:</option>
+		
+		<option value="//api/name/fetchBatchActionsWithSuccess:failure:">- fetchBatchActionsWithSuccess:failure:</option>
+		
+		<option value="//api/name/saveBatchActions:success:failure:">- saveBatchActions:success:failure:</option>
+		
+		<option value="//api/name/triggerActionsForBatchAction:success:failure:">- triggerActionsForBatchAction:success:failure:</option>
+		
+		<option value="//api/name/updateBatchActionsForUnregisteredDevice:success:failure:">- updateBatchActionsForUnregisteredDevice:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALBatchActionManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALBatchActionManager.h<br />ALBatchActionManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The singleton shared instance of ALBatchActionManager</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)sharedInstance</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The shared ALBatchActionManager object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The singleton shared instance of ALBatchActionManager</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchBatchActionsWithSuccess:failure:" title="fetchBatchActionsWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchBatchActionsWithSuccess:failure:">&ndash;&nbsp;fetchBatchActionsWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches all batch actions.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchBatchActionsWithSuccess:(nonnull void ( ^ ) ( NSArray&lt;ALBatchAction*&gt; *batchActions ))<em>success</em> failure:(nonnull void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when all batch actions were successfully fetched.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when fetching batch actions failed. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches all batch actions.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveBatchActions:success:failure:" title="saveBatchActions:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveBatchActions:success:failure:">&ndash;&nbsp;saveBatchActions:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Saves <a href="../Classes/ALBatchAction.html">ALBatchAction</a> objects (added or updated).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveBatchActions:(NSArray&lt;ALBatchAction*&gt; *_Nonnull)<em>batchActions</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>batchActions</code></th>
+						<td><p>Array of <a href="../Classes/ALBatchAction.html">ALBatchAction</a> objects to add/update</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when batch actions are successfully saved.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when batch actions failed to save. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Saves <a href="../Classes/ALBatchAction.html">ALBatchAction</a> objects (added or updated).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteBatchAction:success:failure:" title="deleteBatchAction:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteBatchAction:success:failure:">&ndash;&nbsp;deleteBatchAction:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes <a href="../Classes/ALBatchAction.html">ALBatchAction</a> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteBatchAction:(ALBatchAction *_Nonnull)<em>batchAction</em> success:(nullable void ( ^ ) ( ))<em>success</em> failure:(nullable void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>batchAction</code></th>
+						<td><p><a href="../Classes/ALBatchAction.html">ALBatchAction</a> object to delete</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when batch action is successfully deleted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when batch action failed to delete. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes <a href="../Classes/ALBatchAction.html">ALBatchAction</a> object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteBatchActions:success:failure:" title="deleteBatchActions:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteBatchActions:success:failure:">&ndash;&nbsp;deleteBatchActions:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes array of <a href="../Classes/ALBatchAction.html">ALBatchAction</a> objects.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteBatchActions:(NSArray&lt;ALBatchAction*&gt; *_Nonnull)<em>batchActions</em> success:(nullable void ( ^ ) ( ))<em>success</em> failure:(nullable void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>batchActions</code></th>
+						<td><p>An array of <a href="../Classes/ALBatchAction.html">ALBatchAction</a> objects to delete</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when specified batch actions are successfully deleted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when batch actions failed to delete. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes array of <a href="../Classes/ALBatchAction.html">ALBatchAction</a> objects.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/triggerActionsForBatchAction:success:failure:" title="triggerActionsForBatchAction:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/triggerActionsForBatchAction:success:failure:">&ndash;&nbsp;triggerActionsForBatchAction:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Triggers all the actions associated with specified batch action object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)triggerActionsForBatchAction:(ALBatchAction *)<em>batchAction</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>batchAction</code></th>
+						<td><p><a href="../Classes/ALBatchAction.html">ALBatchAction</a> to execute its associated action objects</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when specified actions are successfully executed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when actions failed to execute. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Triggers all the actions associated with specified batch action object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchAllActionsPerDeviceWithSuccess:failure:" title="fetchAllActionsPerDeviceWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchAllActionsPerDeviceWithSuccess:failure:">&ndash;&nbsp;fetchAllActionsPerDeviceWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves all action objects associated with all devices in user&rsquo;s account.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchAllActionsPerDeviceWithSuccess:(void ( ^ ) ( NSDictionary&lt;NSString*,NSArray&lt;ALAction*&gt; *&gt; *_Nonnull actionsPerDevice ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block to be called if the request is successful.
+Passed a dictionary containing array of <a href="../Classes/ALAction.html">ALAction</a> objects per device dsn.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block to be called if the request fails. Passed an error describing the failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Retrieves all action objects associated with all devices in user&rsquo;s account.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateBatchActionsForUnregisteredDevice:success:failure:" title="updateBatchActionsForUnregisteredDevice:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateBatchActionsForUnregisteredDevice:success:failure:">&ndash;&nbsp;updateBatchActionsForUnregisteredDevice:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates all batch action objects to delete device actions for an unregistered device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateBatchActionsForUnregisteredDevice:(AylaDevice *)<em>device</em> success:(nullable void ( ^ ) ( ))<em>success</em> failure:(nullable void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>AylaDevice which is unregistered</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when all batch actions are successfully updated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when batch actions failed to update for unregistered device actions. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates all batch action objects to delete device actions for an unregistered device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/batchActionsDatumKey" title="batchActionsDatumKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/batchActionsDatumKey">&ndash;&nbsp;batchActionsDatumKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates the key for BatchActions datum, an array containing all the Batch Actions for this app.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)batchActionsDatumKey</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A key for the Batch Actions.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generates the key for BatchActions datum, an array containing all the Batch Actions for this app.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALBatchActionManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

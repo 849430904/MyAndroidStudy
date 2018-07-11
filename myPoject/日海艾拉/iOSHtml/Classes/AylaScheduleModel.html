@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AylaScheduleModel Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/actions">actions</option>
+		
+		<option value="//api/name/configured">configured</option>
+		
+		<option value="//api/name/displayName">displayName</option>
+		
+		<option value="//api/name/duration">duration</option>
+		
+		<option value="//api/name/endDate">endDate</option>
+		
+		<option value="//api/name/endTime">endTime</option>
+		
+		<option value="//api/name/interval">interval</option>
+		
+		<option value="//api/name/remainingTime">remainingTime</option>
+		
+		<option value="//api/name/remainingTimeString">remainingTimeString</option>
+		
+		<option value="//api/name/remainingTimeToStart">remainingTimeToStart</option>
+		
+		<option value="//api/name/remainingTimeToStartString">remainingTimeToStartString</option>
+		
+		<option value="//api/name/schedule">schedule</option>
+		
+		<option value="//api/name/startDate">startDate</option>
+		
+		<option value="//api/name/startTime">startTime</option>
+		
+		<option value="//api/name/triggerDate">triggerDate</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cancelWithSuccess:failure:">- cancelWithSuccess:failure:</option>
+		
+		<option value="//api/name/clearScheduleWithSuccess:failure:">- clearScheduleWithSuccess:failure:</option>
+		
+		<option value="//api/name/configureScheduleOnDays:turnOnAt:turnOffAt:success:failure:">- configureScheduleOnDays:turnOnAt:turnOffAt:success:failure:</option>
+		
+		<option value="//api/name/configureTurnOnAt:turnOffAtDate:success:failure:">- configureTurnOnAt:turnOffAtDate:success:failure:</option>
+		
+		<option value="//api/name/createAction:success:failure:">- createAction:success:failure:</option>
+		
+		<option value="//api/name/deleteAction:success:failure:">- deleteAction:success:failure:</option>
+		
+		<option value="//api/name/deleteAllActionsWithSuccess:failure:">- deleteAllActionsWithSuccess:failure:</option>
+		
+		<option value="//api/name/fetchAllScheduleActionsWithSuccess:failure:">- fetchAllScheduleActionsWithSuccess:failure:</option>
+		
+		<option value="//api/name/initWithSchedule:timeZone:">- initWithSchedule:timeZone:</option>
+		
+		<option value="//api/name/isDayEnabled:">- isDayEnabled:</option>
+		
+		<option value="//api/name/setDay:enabled:">- setDay:enabled:</option>
+		
+		<option value="//api/name/startTimerIn:duration:success:failure:">- startTimerIn:duration:success:failure:</option>
+		
+		<option value="//api/name/updateAction:success:failure:">- updateAction:success:failure:</option>
+		
+		<option value="//api/name/updateWithSuccess:failure:">- updateWithSuccess:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AylaScheduleModel Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALSchedule.h<br />ALSchedule.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ALSchedule provides methods to configure the schedules. You can use the dot notation or KVC to access the properties
+in the AylaSchedule object.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithSchedule:timeZone:" title="initWithSchedule:timeZone:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithSchedule:timeZone:">&ndash;&nbsp;initWithSchedule:timeZone:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the model with an <code>AylaSchedule</code> and a timezone of the <code>AylaDevice</code> owning it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithSchedule:(AylaSchedule *)<em>schedule</em> timeZone:(NSTimeZone *)<em>timeZone</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>schedule</code></th>
+						<td><p>The <a href="#//api/name/schedule">schedule</a> of the model, and the time zone of all <a href="#//api/name/actions">actions</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeZone</code></th>
+						<td><p>Time zone of the Schedule</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An initialized instance of <code>AylaScheduleModel</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the model with an <code>AylaSchedule</code> and a timezone of the <code>AylaDevice</code> owning it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuring schedule" name="task_Configuring schedule"></a>
+						<h2 class="task-title">Configuring schedule</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/clearScheduleWithSuccess:failure:" title="clearScheduleWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearScheduleWithSuccess:failure:">&ndash;&nbsp;clearScheduleWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Clears <a href="#//api/name/schedule">schedule</a> configuration (timer or regular <a href="#//api/name/schedule">schedule</a>) and deletes <a href="#//api/name/actions">actions</a> in non-fixed <a href="#//api/name/actions">actions</a> schedules.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearScheduleWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the <a href="#//api/name/schedule">schedule</a> has been cleared.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the <a href="#//api/name/schedule">schedule</a> could not be cleared.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Clears <a href="#//api/name/schedule">schedule</a> configuration (timer or regular <a href="#//api/name/schedule">schedule</a>) and deletes <a href="#//api/name/actions">actions</a> in non-fixed <a href="#//api/name/actions">actions</a> schedules.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startTimerIn:duration:success:failure:" title="startTimerIn:duration:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startTimerIn:duration:success:failure:">&ndash;&nbsp;startTimerIn:duration:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Convenience method to configure the <a href="#//api/name/schedule">schedule</a> as a Timer. Works with <a href="#//api/name/actions">actions</a> on Boolean properties.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startTimerIn:(NSTimeInterval)<em>delay</em> duration:(NSTimeInterval)<em>time</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delay</code></th>
+						<td><p>The time it has to pass before the timer starts.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>time</code></th>
+						<td><p>The time the <a href="#//api/name/schedule">schedule</a> will take to fire.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the <a href="#//api/name/schedule">schedule</a> has been <a href="#//api/name/configured">configured</a> as a timer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the Schedule could not be <a href="#//api/name/configured">configured</a>. Takes a single NSError describing the
+problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Convenience method to configure the <a href="#//api/name/schedule">schedule</a> as a Timer. Works with <a href="#//api/name/actions">actions</a> on Boolean properties.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureTurnOnAt:turnOffAtDate:success:failure:" title="configureTurnOnAt:turnOffAtDate:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureTurnOnAt:turnOffAtDate:success:failure:">&ndash;&nbsp;configureTurnOnAt:turnOffAtDate:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Convenience method to configure a single time <a href="#//api/name/schedule">schedule</a> for boolean properties, that will turn the property ON and
+OFF at the specified dates.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureTurnOnAt:(NSDate *)<em>startDate</em> turnOffAtDate:(NSDate *)<em>endDate</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startDate</code></th>
+						<td><p>The date and time at which the property will be set to true.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endDate</code></th>
+						<td><p>The date and time at which the proeprty will be set to false.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the <a href="#//api/name/schedule">schedule</a> has been <a href="#//api/name/configured">configured</a> as a single time <a href="#//api/name/schedule">schedule</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the Schedule could not be <a href="#//api/name/configured">configured</a>. Takes a single NSError describing the
+problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Convenience method to configure a single time <a href="#//api/name/schedule">schedule</a> for boolean properties, that will turn the property ON and
+OFF at the specified dates.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureScheduleOnDays:turnOnAt:turnOffAt:success:failure:" title="configureScheduleOnDays:turnOnAt:turnOffAt:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureScheduleOnDays:turnOnAt:turnOffAt:success:failure:">&ndash;&nbsp;configureScheduleOnDays:turnOnAt:turnOffAt:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Convenience method to configure this <a href="#//api/name/schedule">schedule</a> as a periodic daily <a href="#//api/name/schedule">schedule</a> to set boolean properties to true/false,
+you can specify the days of the week, on and off times in which the <a href="#//api/name/schedule">schedule</a> will trigger.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureScheduleOnDays:(NSArray *)<em>days</em> turnOnAt:(NSDate *)<em>onTime</em> turnOffAt:(NSDate *)<em>offTime</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>days</code></th>
+						<td><p>An array of NSNumber representing the ALScheduleDay&rsquo;s in which the <a href="#//api/name/schedule">schedule</a> will be active.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>onTime</code></th>
+						<td><p>The time of the day when the property will be set to true.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offTime</code></th>
+						<td><p>The time of the day when the property will be set to false.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the <a href="#//api/name/schedule">schedule</a> has been <a href="#//api/name/configured">configured</a> as a daily <a href="#//api/name/schedule">schedule</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the Schedule could not be <a href="#//api/name/configured">configured</a>. Takes a single NSError describing the
+problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Convenience method to configure this <a href="#//api/name/schedule">schedule</a> as a periodic daily <a href="#//api/name/schedule">schedule</a> to set boolean properties to true/false,
+you can specify the days of the week, on and off times in which the <a href="#//api/name/schedule">schedule</a> will trigger.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDay:enabled:" title="setDay:enabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDay:enabled:">&ndash;&nbsp;setDay:enabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enables/disables the specified <a href="../Constants/ALScheduleDay.html">ALScheduleDay</a>. You must call <a href="#//api/name/updateWithSuccess:failure:">updateWithSuccess:failure:</a> for the changes to take
+effect.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDay:(ALScheduleDay)<em>day</em> enabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>day</code></th>
+						<td><p>The day to enable</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enabled</code></th>
+						<td><p>YES if the <a href="#//api/name/schedule">schedule</a> on the specified day should be enabled, NO if they should be disabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Enables/disables the specified <a href="../Constants/ALScheduleDay.html">ALScheduleDay</a>. You must call <a href="#//api/name/updateWithSuccess:failure:">updateWithSuccess:failure:</a> for the changes to take
+effect.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="#//api/name/updateWithSuccess:failure:">- updateWithSuccess:failure:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateWithSuccess:failure:" title="updateWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateWithSuccess:failure:">&ndash;&nbsp;updateWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Saves the changes in the <a href="#//api/name/schedule">schedule</a>, call this method for the property changes to take effect.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the <a href="#//api/name/schedule">schedule</a> has been successfully updated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the update fails, taking a single NSError describing the error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Saves the changes in the <a href="#//api/name/schedule">schedule</a>, call this method for the property changes to take effect.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelWithSuccess:failure:" title="cancelWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelWithSuccess:failure:">&ndash;&nbsp;cancelWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Convenience method to cancel the <a href="#//api/name/schedule">schedule</a>. Works by seting the start and end date to a past date.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the <a href="#//api/name/schedule">schedule</a> has been cancelled.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the Schedule could not be cancelled. Takes a single NSError describing the
+problem.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Convenience method to cancel the <a href="#//api/name/schedule">schedule</a>. Works by seting the start and end date to a past date.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="getting information from the `ALSchedule`" name="task_getting information from the `ALSchedule`"></a>
+						<h2 class="task-title">getting information from the `ALSchedule`</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isDayEnabled:" title="isDayEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDayEnabled:">&ndash;&nbsp;isDayEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns wether the <a href="#//api/name/schedule">schedule</a> is enabled in the specified day.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isDayEnabled:(ALScheduleDay)<em>day</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>day</code></th>
+						<td><p>An ALSCheduleDay</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the <a href="#//api/name/schedule">schedule</a> are enabled in the specified day, NO otherwise</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns wether the <a href="#//api/name/schedule">schedule</a> is enabled in the specified day.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Actions" name="task_Actions"></a>
+						<h2 class="task-title">Actions</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/fetchAllScheduleActionsWithSuccess:failure:" title="fetchAllScheduleActionsWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchAllScheduleActionsWithSuccess:failure:">&ndash;&nbsp;fetchAllScheduleActionsWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches all <a href="#//api/name/actions">actions</a> in the <a href="#//api/name/schedule"><code>schedule</code></a> and stores them in <a href="#//api/name/actions"><code>actions</code></a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchAllScheduleActionsWithSuccess:(void ( ^ ) ( NSArray AYLA_GENERIC ( AylaScheduleAction *) *scheduleActions ))<em>successBlock</em> failure:(void ( ^ ) ( NSError *error ))<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>successBlock</code></th>
+						<td><p>A block called when the <a href="#//api/name/actions">actions</a> have been successfully fetched.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A block called when the <a href="#//api/name/actions">actions</a> could not be fetched.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches all <a href="#//api/name/actions">actions</a> in the <a href="#//api/name/schedule"><code>schedule</code></a> and stores them in <a href="#//api/name/actions"><code>actions</code></a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAction:success:failure:" title="createAction:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAction:success:failure:">&ndash;&nbsp;createAction:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>AylaScheduleAction</code> in the receiver.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createAction:(AylaScheduleAction *)<em>action</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>action</code></th>
+						<td><p>The action to be created.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the action has been successfully created.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the action creation failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates an <code>AylaScheduleAction</code> in the receiver.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateAction:success:failure:" title="updateAction:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateAction:success:failure:">&ndash;&nbsp;updateAction:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates an <code>AylaScheduleAction</code> in the receiver.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateAction:(AylaScheduleAction *)<em>action</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>action</code></th>
+						<td><p>The action to be updated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the action has been successfully updated.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the action update failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates an <code>AylaScheduleAction</code> in the receiver.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAction:success:failure:" title="deleteAction:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAction:success:failure:">&ndash;&nbsp;deleteAction:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes an action from the receiver.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteAction:(AylaScheduleAction *)<em>action</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>action</code></th>
+						<td><p>The action to delete from the receiver.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the action has been deleted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the action deletion fails.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes an action from the receiver.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAllActionsWithSuccess:failure:" title="deleteAllActionsWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAllActionsWithSuccess:failure:">&ndash;&nbsp;deleteAllActionsWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes all <a href="#//api/name/actions">actions</a> from the receiver.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteAllActionsWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSArray&lt;NSError*&gt; *errors ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the action has been deleted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the action deletion fails.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes all <a href="#//api/name/actions">actions</a> from the receiver.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remainingTime" title="remainingTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remainingTime">&nbsp;&nbsp;remainingTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the time <a href="#//api/name/interval">interval</a> since the <a href="#//api/name/triggerDate"><code>triggerDate</code></a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSTimeInterval remainingTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the time <a href="#//api/name/interval">interval</a> since the <a href="#//api/name/triggerDate"><code>triggerDate</code></a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remainingTimeString" title="remainingTimeString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remainingTimeString">&nbsp;&nbsp;remainingTimeString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Converts the remaining time to a NSString with the format: HH:mm:ss</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSString *remainingTimeString</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Converts the remaining time to a NSString with the format: HH:mm:ss</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remainingTimeToStartString" title="remainingTimeToStartString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remainingTimeToStartString">&nbsp;&nbsp;remainingTimeToStartString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Converts the remaining time to start to a NSString with the format: HH:mm:ss</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSString *remainingTimeToStartString</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Converts the remaining time to start to a NSString with the format: HH:mm:ss</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/triggerDate" title="triggerDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/triggerDate">&nbsp;&nbsp;triggerDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the result of adding the <a href="#//api/name/duration"><code>duration</code></a> to the <a href="#//api/name/startTime"><code>startTime</code></a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSDate *triggerDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the result of adding the <a href="#//api/name/duration"><code>duration</code></a> to the <a href="#//api/name/startTime"><code>startTime</code></a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remainingTimeToStart" title="remainingTimeToStart"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remainingTimeToStart">&nbsp;&nbsp;remainingTimeToStart</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the time <a href="#//api/name/interval">interval</a> since the <a href="#//api/name/startTime"><code>startTime</code></a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSTimeInterval remainingTimeToStart</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the time <a href="#//api/name/interval">interval</a> since the <a href="#//api/name/startTime"><code>startTime</code></a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startTime" title="startTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startTime">&nbsp;&nbsp;startTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the NSDate for the <code>startTimeEachDay</code> string, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSDate *startTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the NSDate for the <code>startTimeEachDay</code> string, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/endTime" title="endTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/endTime">&nbsp;&nbsp;endTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the NSDate for the <code>endTimeEachDay</code> string, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSDate *endTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the NSDate for the <code>endTimeEachDay</code> string, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startDate" title="startDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startDate">&nbsp;&nbsp;startDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The date when the <a href="#//api/name/schedule">schedule</a> will first start, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSDate *startDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The date when the <a href="#//api/name/schedule">schedule</a> will first start, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/endDate" title="endDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/endDate">&nbsp;&nbsp;endDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The date when the <a href="#//api/name/schedule">schedule</a> will end, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSDate *endDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The date when the <a href="#//api/name/schedule">schedule</a> will end, in UTC if <code>utc</code> is true.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The duration of the Timer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite) NSTimeInterval duration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The duration of the Timer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/interval" title="interval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/interval">&nbsp;&nbsp;interval</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The interval of the Schedule.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite) NSTimeInterval interval</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The interval of the Schedule.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configured" title="configured"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configured">&nbsp;&nbsp;configured</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates wether the Schedule slot has been configured as timer or <a href="#//api/name/schedule">schedule</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) BOOL configured</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates wether the Schedule slot has been configured as timer or <a href="#//api/name/schedule">schedule</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/displayName" title="displayName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/displayName">&nbsp;&nbsp;displayName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Display name of the <a href="#//api/name/schedule">schedule</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *displayName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Display name of the <a href="#//api/name/schedule">schedule</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/schedule" title="schedule"></a>
+	<h3 class="method-title"><code><a href="#//api/name/schedule">&nbsp;&nbsp;schedule</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Associated <code>AylaSchedule</code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) AylaSchedule *schedule</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The Associated <code>AylaSchedule</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/actions" title="actions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actions">&nbsp;&nbsp;actions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Schedule Actions fetched or nil, if no actions have been fetched yet.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSArray&lt;AylaScheduleAction*&gt; *actions</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Schedule Actions fetched or nil, if no actions have been fetched yet.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSchedule.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

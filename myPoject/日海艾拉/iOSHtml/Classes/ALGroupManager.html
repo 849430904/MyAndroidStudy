@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALGroupManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/createGroupNamed:success:failure:">- createGroupNamed:success:failure:</option>
+		
+		<option value="//api/name/createGroupWithDictionary:success:failure:">- createGroupWithDictionary:success:failure:</option>
+		
+		<option value="//api/name/createGroupWithName:devices:success:failure:">- createGroupWithName:devices:success:failure:</option>
+		
+		<option value="//api/name/deleteGroupAtIndex:success:failure:">- deleteGroupAtIndex:success:failure:</option>
+		
+		<option value="//api/name/groupAtIndex:success:failure:">- groupAtIndex:success:failure:</option>
+		
+		<option value="//api/name/groupDatumKey">- groupDatumKey</option>
+		
+		<option value="//api/name/groupIndexDatumKey">- groupIndexDatumKey</option>
+		
+		<option value="//api/name/groupWithName:success:failure:">- groupWithName:success:failure:</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initWithSessionManager:appId:">- initWithSessionManager:appId:</option>
+		
+		<option value="//api/name/nameForGroupAtIndex:">- nameForGroupAtIndex:</option>
+		
+		<option value="//api/name/numberOfGroups">- numberOfGroups</option>
+		
+		<option value="//api/name/processGroupIndexInDatum:">- processGroupIndexInDatum:</option>
+		
+		<option value="//api/name/refreshGroupIndexWithSuccess:failure:">- refreshGroupIndexWithSuccess:failure:</option>
+		
+		<option value="//api/name/saveGroupIndexWithSuccess:failure:">- saveGroupIndexWithSuccess:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALGroupManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALGroupManager.h<br />ALGroupManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Retrieves, creates and deletes <a href="../Classes/ALGroup.html"><code>ALGroup</code></a> instances, manages the group index. To update the members of the group use the
+<a href="../Classes/ALGroup.html"><code>ALGroup</code></a> instance itself.</p>
+
+<p>Group names are unique, if you create a group with a taken name the method will return an
+ALGroupManagerErrorGroupNameExists error.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithSessionManager:appId:" title="initWithSessionManager:appId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithSessionManager:appId:">&ndash;&nbsp;initWithSessionManager:appId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes Group Manager for the user in the passed <a href="#//api/name/appId">appId</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithSessionManager:(AylaSessionManager *)<em>sessionManager</em> appId:(NSString *)<em>appId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sessionManager</code></th>
+						<td><p>The <a href="#//api/name/sessionManager"><code>sessionManager</code></a> of the user who will own the group</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appId</code></th>
+						<td><p>An <a href="#//api/name/appId">appId</a> to separate the <a href="#//api/name/groups">groups</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An initialized instance of ALGroupManager</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes Group Manager for the user in the passed <a href="#//api/name/appId">appId</a>.</p>
+
+<p>This implementation uses AylaDatum to create <a href="#//api/name/groups">groups</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groupIndexDatumKey" title="groupIndexDatumKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupIndexDatumKey">&ndash;&nbsp;groupIndexDatumKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates the key for the Group Index datum, a dictionary containing the keys and names of all the <a href="#//api/name/groups">groups</a> for this app.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)groupIndexDatumKey</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A key for the Group Index.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generates the key for the Group Index datum, a dictionary containing the keys and names of all the <a href="#//api/name/groups">groups</a> for this app.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groupDatumKey" title="groupDatumKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupDatumKey">&ndash;&nbsp;groupDatumKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates a key for the group with a given name for this app.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)groupDatumKey</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A key for the group Datum.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generates a key for the group with a given name for this app.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshGroupIndexWithSuccess:failure:" title="refreshGroupIndexWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshGroupIndexWithSuccess:failure:">&ndash;&nbsp;refreshGroupIndexWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asynchronously refreshes the Group Index (A dictionary describing the group names and IDs).
+This method is required to get the index of existing <a href="#//api/name/groups">groups</a>, should be the first method you&rsquo;d call in order to use
+<a href="#//api/name/groups">groups</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refreshGroupIndexWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the group index has been retrieved successfully.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block taking a NSError as single parameter called when the device index update has failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Asynchronously refreshes the Group Index (A dictionary describing the group names and IDs).
+This method is required to get the index of existing <a href="#//api/name/groups">groups</a>, should be the first method you&rsquo;d call in order to use
+<a href="#//api/name/groups">groups</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/processGroupIndexInDatum:" title="processGroupIndexInDatum:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/processGroupIndexInDatum:">&ndash;&nbsp;processGroupIndexInDatum:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Turns a valid AylaDatum containing a dictionary of the group of Names and GroupID as Keys and Values to be used as Group Index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSError *)processGroupIndexInDatum:(AylaDatum *)<em>datum</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>datum</code></th>
+						<td><p>The AylaDatum containing a the information of the Group Index.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSError in case of an error, nil otherwise.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Turns a valid AylaDatum containing a dictionary of the group of Names and GroupID as Keys and Values to be used as Group Index.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfGroups" title="numberOfGroups"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfGroups">&ndash;&nbsp;numberOfGroups</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the number of <a href="#//api/name/groups">groups</a> in the Group Index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfGroups</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the number of <a href="#//api/name/groups">groups</a> in the Group Index.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/nameForGroupAtIndex:" title="nameForGroupAtIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/nameForGroupAtIndex:">&ndash;&nbsp;nameForGroupAtIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the name for a group at the specified index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)nameForGroupAtIndex:(NSInteger)<em>index</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The index of the requested group name.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSString with the name of the group at the specified index.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the name for a group at the specified index.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groupAtIndex:success:failure:" title="groupAtIndex:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupAtIndex:success:failure:">&ndash;&nbsp;groupAtIndex:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asynchronously gets the group at the specified index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)groupAtIndex:(NSInteger)<em>index</em> success:(void ( ^ ) ( ALGroup *group ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The index of the wanted group.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block taking the wanted <a href="../Classes/ALGroup.html">ALGroup</a> as the only parameter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the retrieval failed. This block takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Asynchronously gets the group at the specified index.</p>
+
+<p>This method will cache the <a href="#//api/name/groups">groups</a>, if the group isn&rsquo;t in the cache it will retrieve it from the cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groupWithName:success:failure:" title="groupWithName:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groupWithName:success:failure:">&ndash;&nbsp;groupWithName:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asynchronously gets the group with the specified name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)groupWithName:(NSString *)<em>name</em> success:(void ( ^ ) ( ALGroup *group ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the wanted group.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block taking the wanted <a href="../Classes/ALGroup.html">ALGroup</a> as the only parameter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the retrieval failed. This block takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Asynchronously gets the group with the specified name.</p>
+
+<p>This method will cache the <a href="#//api/name/groups">groups</a>, if the group isn&rsquo;t in the cache it will retrieve it from the cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteGroupAtIndex:success:failure:" title="deleteGroupAtIndex:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteGroupAtIndex:success:failure:">&ndash;&nbsp;deleteGroupAtIndex:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes the group at the given index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteGroupAtIndex:(NSInteger)<em>index</em> success:(void ( ^ ) ( void ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The index of the group to delete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the group was successfully deleted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the group creation failed. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes the group at the given index.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createGroupNamed:success:failure:" title="createGroupNamed:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGroupNamed:success:failure:">&ndash;&nbsp;createGroupNamed:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates group with the specified name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createGroupNamed:(NSString *)<em>name</em> success:(void ( ^ ) ( ALGroup *))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the group to be created.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the group was successfully created, taking a single parameter to receive the
+created group.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the group creation failed. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates group with the specified name.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createGroupWithName:devices:success:failure:" title="createGroupWithName:devices:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGroupWithName:devices:success:failure:">&ndash;&nbsp;createGroupWithName:devices:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a group with the specified name and array of ALDevices.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createGroupWithName:(NSString *)<em>name</em> devices:(NSArray *)<em>devices</em> success:(void ( ^ ) ( ALGroup *))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the group to be created.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devices</code></th>
+						<td><p>An NSArray of ALDevice.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the group was successfully created, taking a single parameter to receive the
+created group.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the group creation failed. It takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a group with the specified name and array of ALDevices.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createGroupWithDictionary:success:failure:" title="createGroupWithDictionary:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGroupWithDictionary:success:failure:">&ndash;&nbsp;createGroupWithDictionary:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a group with the given dictionary.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createGroupWithDictionary:(NSDictionary *)<em>dictionary</em> success:(void ( ^ ) ( ALGroup *))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dictionary</code></th>
+						<td><p>The dictionary representing the <a href="#//api/name/groups">groups</a>, it miust contain the ALGroupNameKey and optionally a ALGroupDSNArrayKey.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called on a successfull <a href="../Classes/ALGroup.html">ALGroup</a> creation, taking a single parameter with the new group.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when the group creation fails.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a group with the given dictionary.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveGroupIndexWithSuccess:failure:" title="saveGroupIndexWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveGroupIndexWithSuccess:failure:">&ndash;&nbsp;saveGroupIndexWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method called to save the changes in the Group index, if the group index datum doesn&rsquo;t exist, it creates it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveGroupIndexWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the method successfully saves the changes in the Group Index.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block taking a single NSError, called on failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method called to save the changes in the Group index, if the group index datum doesn&rsquo;t exist, it creates it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Deprecations Methods" name="task_Deprecations Methods"></a>
+						<h2 class="task-title">Deprecations Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unavailable</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)init</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Unavailable</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Unavailable</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALGroupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

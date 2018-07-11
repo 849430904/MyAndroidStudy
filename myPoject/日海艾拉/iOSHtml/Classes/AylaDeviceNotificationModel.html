@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AylaDeviceNotificationModel Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/apps">apps</option>
+		
+		<option value="//api/name/deviceNotification">deviceNotification</option>
+		
+		<option value="//api/name/isNew">isNew</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/configureOnConnectionLostWithThreshold:">- configureOnConnectionLostWithThreshold:</option>
+		
+		<option value="//api/name/configureOnConnectionRestoredWithThreshold:">- configureOnConnectionRestoredWithThreshold:</option>
+		
+		<option value="//api/name/createApp:success:failure:">- createApp:success:failure:</option>
+		
+		<option value="//api/name/deleteWithSuccess:failure:">- deleteWithSuccess:failure:</option>
+		
+		<option value="//api/name/disableApps:forContact:success:failure:">- disableApps:forContact:success:failure:</option>
+		
+		<option value="//api/name/enabledAppsForContact:success:failure:">- enabledAppsForContact:success:failure:</option>
+		
+		<option value="//api/name/fetchApps:failure:">- fetchApps:failure:</option>
+		
+		<option value="//api/name/initWithDeviceNotification:">- initWithDeviceNotification:</option>
+		
+		<option value="//api/name/saveWithSuccess:failure:">- saveWithSuccess:failure:</option>
+		
+		<option value="//api/name/updateEmailAppsWithSubject:emailBody:message:template:success:failure:">- updateEmailAppsWithSubject:emailBody:message:template:success:failure:</option>
+		
+		<option value="//api/name/updatePushAppsWithMessage:mData:success:failure:">- updatePushAppsWithMessage:mData:success:failure:</option>
+		
+		<option value="//api/name/updateSMSAppWithMessage:success:failure:">- updateSMSAppWithMessage:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AylaDeviceNotificationModel Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALDeviceNotification.h<br />ALDeviceNotification.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ALDevice notification creates notifications for the device attributes (connection status)
+You can use KVC and dot notation to access the properties in <code>AylaDeviceNotification</code> directly through this class.
+E.g.: alDeviceNotification.notificationType.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithDeviceNotification:" title="initWithDeviceNotification:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithDeviceNotification:">&ndash;&nbsp;initWithDeviceNotification:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the model with an <code>AylaDeviceNotification</code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithDeviceNotification:(AylaDeviceNotification *)<em>deviceNotification</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceNotification</code></th>
+						<td><p>The <code>AylaDeviceNotification</code> of the model</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An initialized <a href="#//api/name/deviceNotification">deviceNotification</a> model</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes the model with an <code>AylaDeviceNotification</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuring a notification" name="task_Configuring a notification"></a>
+						<h2 class="task-title">Configuring a notification</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/configureOnConnectionLostWithThreshold:" title="configureOnConnectionLostWithThreshold:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureOnConnectionLostWithThreshold:">&ndash;&nbsp;configureOnConnectionLostWithThreshold:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the Device notification to be triggered when the time specified in threshold has passed after connection
+has been lost.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureOnConnectionLostWithThreshold:(NSInteger)<em>threshold</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>threshold</code></th>
+						<td><p>The time to pass until the notification is sent.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the Device notification to be triggered when the time specified in threshold has passed after connection
+has been lost.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureOnConnectionRestoredWithThreshold:" title="configureOnConnectionRestoredWithThreshold:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureOnConnectionRestoredWithThreshold:">&ndash;&nbsp;configureOnConnectionRestoredWithThreshold:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures the Device notification to be triggered when the time specified in threshold has passed after connection
+has been restored.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureOnConnectionRestoredWithThreshold:(NSInteger)<em>threshold</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>threshold</code></th>
+						<td><p>The time to pass until the notification is sent.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configures the Device notification to be triggered when the time specified in threshold has passed after connection
+has been restored.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Saving changes" name="task_Saving changes"></a>
+						<h2 class="task-title">Saving changes</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/saveWithSuccess:failure:" title="saveWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveWithSuccess:failure:">&ndash;&nbsp;saveWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Saves a newly created notification, or updates an existing one. Use this method after configuring a new or
+existing notificatio. It&rsquo;s not necessary to call this method after creation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the configuration has been saved.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Saves a newly created notification, or updates an existing one. Use this method after configuring a new or
+existing notificatio. It&rsquo;s not necessary to call this method after creation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Delete Device Notification" name="task_Delete Device Notification"></a>
+						<h2 class="task-title">Delete Device Notification</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/deleteWithSuccess:failure:" title="deleteWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteWithSuccess:failure:">&ndash;&nbsp;deleteWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes the Device Notification in the Cloud.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteWithSuccess:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A notification sent when the Device Notification has been deleted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes the Device Notification in the Cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enabledAppsForContact:success:failure:" title="enabledAppsForContact:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enabledAppsForContact:success:failure:">&ndash;&nbsp;enabledAppsForContact:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array of the enabled <a href="#//api/name/apps">apps</a> for the specified contact. The array can contain zero or more of the constants in
+<code>AylaServiceAppType</code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enabledAppsForContact:(AylaContact *)<em>contact</em> success:(void ( ^ ) ( NSArray *enabledApps ))<em>success</em> failure:(void ( ^ ) ( NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contact</code></th>
+						<td><p>The contact whose <a href="#//api/name/apps">apps</a> will be returned.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the enabled <a href="#//api/name/apps">apps</a> for the contact have been fetched.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something goes wrong. Takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of App Names enabled for the Specified <code>ALContact</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array of the enabled <a href="#//api/name/apps">apps</a> for the specified contact. The array can contain zero or more of the constants in
+<code>AylaServiceAppType</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createApp:success:failure:" title="createApp:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createApp:success:failure:">&ndash;&nbsp;createApp:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a Push Notification App for the specified contact.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createApp:(AylaDeviceNotificationApp *)<em>app</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>app</code></th>
+						<td><p>The app to create</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the method has succeeded to create the PN app.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError Parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a Push Notification App for the specified contact.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Updating apps" name="task_Updating apps"></a>
+						<h2 class="task-title">Updating apps</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/updateEmailAppsWithSubject:emailBody:message:template:success:failure:" title="updateEmailAppsWithSubject:emailBody:message:template:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateEmailAppsWithSubject:emailBody:message:template:success:failure:">&ndash;&nbsp;updateEmailAppsWithSubject:emailBody:message:template:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates an existing Email App in the cloud with the specified parameters.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateEmailAppsWithSubject:(NSString *)<em>subject</em> emailBody:(NSString *)<em>emailBody</em> message:(NSString *)<em>message</em> template:(NSString *)<em>template</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSArray *errors ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subject</code></th>
+						<td><p>The subject of the email</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailBody</code></th>
+						<td><p>The HTML body of the email.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message of the email.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>template</code></th>
+						<td><p>The ID of the email template.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the method has succeeded to update the email app.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError Parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates an existing Email App in the cloud with the specified parameters.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatePushAppsWithMessage:mData:success:failure:" title="updatePushAppsWithMessage:mData:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatePushAppsWithMessage:mData:success:failure:">&ndash;&nbsp;updatePushAppsWithMessage:mData:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates an existing Push Notification App in the cloud with the specified parameters.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updatePushAppsWithMessage:(NSString *)<em>message</em> mData:(NSString *)<em>mData</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSArray *errors ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message of the Push Notification.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mData</code></th>
+						<td><p>A String passed with the Push Notification, can be used to include aditional information.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the method has succeeded to update the Push Notification app.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError Parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates an existing Push Notification App in the cloud with the specified parameters.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSMSAppWithMessage:success:failure:" title="updateSMSAppWithMessage:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSMSAppWithMessage:success:failure:">&ndash;&nbsp;updateSMSAppWithMessage:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates an existing SMS App in the cloud with the specified parameters.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateSMSAppWithMessage:(NSString *)<em>message</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSArray *errors ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The text to send in the message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the method has succeeded to update the SMS app.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError Parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Updates an existing SMS App in the cloud with the specified parameters.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Disabling apps" name="task_Disabling apps"></a>
+						<h2 class="task-title">Disabling apps</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/disableApps:forContact:success:failure:" title="disableApps:forContact:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disableApps:forContact:success:failure:">&ndash;&nbsp;disableApps:forContact:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disables <a href="#//api/name/apps"><code>apps</code></a> for <code>contact</code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disableApps:(NSArray *)<em>apps</em> forContact:(AylaContact *)<em>contact</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSArray *errors ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>apps</code></th>
+						<td><p><code>NSArray</code> of <code>AylaDeviceNotificationApp</code> to disable</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contact</code></th>
+						<td><p>Contact for whom <a href="#//api/name/apps">apps</a> will be disabled.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the <a href="#//api/name/apps">apps</a> have been disabled for the contact.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when <a href="#//api/name/apps">apps</a> fail to be disbaled</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Disables <a href="#//api/name/apps"><code>apps</code></a> for <code>contact</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchApps:failure:" title="fetchApps:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchApps:failure:">&ndash;&nbsp;fetchApps:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches the <a href="#//api/name/apps">apps</a> in the notification</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchApps:(void ( ^ ) ( NSArray AYLA_GENERIC ( AylaDeviceNotificationApp *) *apps ))<em>successBlock</em> failure:(void ( ^ ) ( NSError *error ))<em>failureBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>successBlock</code></th>
+						<td><p>A block called when the <a href="#//api/name/apps">apps</a> have been retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failureBlock</code></th>
+						<td><p>A block called when the <a href="#//api/name/apps">apps</a> could not be fetched</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches the <a href="#//api/name/apps">apps</a> in the notification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isNew" title="isNew"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isNew">&nbsp;&nbsp;isNew</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns whether the Device Notification is new (not saved yet) or exists already in the cloud.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isNew</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns whether the Device Notification is new (not saved yet) or exists already in the cloud.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceNotification" title="deviceNotification"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceNotification">&nbsp;&nbsp;deviceNotification</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The device notification of the model</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) AylaDeviceNotification *deviceNotification</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The device notification of the model</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/apps" title="apps"></a>
+	<h3 class="method-title"><code><a href="#//api/name/apps">&nbsp;&nbsp;apps</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The apps in the Device Notification</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSArray&lt;AylaDeviceNotificationApp*&gt; *apps</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The apps in the Device Notification</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceNotification.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NSTimer(WeakTarget) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/wt_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:">+ wt_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NSTimer(WeakTarget) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>NSTimer+WeakTarget.h<br />NSTimer+WeakTarget.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Implements a method to schedule a timer with a target kept as a weak reference. The timer will be released
+automatically after the target has been released.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/wt_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:" title="wt_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/wt_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:">+&nbsp;wt_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and returns a new NSTimer object and schedules it on the current run loop in the default mode. After seconds seconds have elapsed, the timer fires, sending the message aSelector to target. The target object will not be retained.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSTimer *)wt_scheduledTimerWithTimeInterval:(NSTimeInterval)<em>ti</em> target:(id)<em>aTarget</em> selector:(SEL)<em>aSelector</em> userInfo:(id)<em>userInfo</em> repeats:(BOOL)<em>yesOrNo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ti</code></th>
+						<td><p>The number of seconds between firings of the timer. If seconds is less than or equal to 0.0, this method chooses the nonnegative value of 0.1 milliseconds instead.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aTarget</code></th>
+						<td><p>The object to which to send the message specified by aSelector when the timer fires. The timer maintains a weak reference to target.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aSelector</code></th>
+						<td><p>The message to send to target when the timer fires. The selector should have the following
+signature: timerFireMethod: (including a colon to indicate that the method takes an argument). The timer passes itself
+as the argument, thus the method would adopt the following pattern:</p>
+
+<pre><code>- (void)timerFireMethod:(NSTimer *)timer</code></pre>
+</td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>The user info for the timer. The timer maintains a strong reference to this object until it (the timer) is invalidated. This parameter may be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>yesOrNo</code></th>
+						<td><p>If YES, the timer will repeatedly reschedule itself until invalidated. If NO, the timer will be invalidated after it fires.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new NSTimer object, configured according to the specified parameters.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates and returns a new NSTimer object and schedules it on the current run loop in the default mode. After seconds seconds have elapsed, the timer fires, sending the message aSelector to target. The target object will not be retained.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSTimer+WeakTarget.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

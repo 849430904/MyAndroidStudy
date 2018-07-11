@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALSessionParameters Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/)">)</option>
+		
+		<option value="//api/name/allowDSS">allowDSS</option>
+		
+		<option value="//api/name/allowLANLogIn">allowLANLogIn</option>
+		
+		<option value="//api/name/appId">appId</option>
+		
+		<option value="//api/name/appSecret">appSecret</option>
+		
+		<option value="//api/name/confirmAccountEmailBody">confirmAccountEmailBody</option>
+		
+		<option value="//api/name/confirmAccountEmailSubject">confirmAccountEmailSubject</option>
+		
+		<option value="//api/name/confirmAccountEmailTemplate">confirmAccountEmailTemplate</option>
+		
+		<option value="//api/name/defaultCountryCode">defaultCountryCode</option>
+		
+		<option value="//api/name/deviceCreator">deviceCreator</option>
+		
+		<option value="//api/name/deviceSortingComparator">deviceSortingComparator</option>
+		
+		<option value="//api/name/deviceSortingDescriptors">deviceSortingDescriptors</option>
+		
+		<option value="//api/name/identityProvider">identityProvider</option>
+		
+		<option value="//api/name/loggingLevel">loggingLevel</option>
+		
+		<option value="//api/name/networkTimeoutInterval">networkTimeoutInterval</option>
+		
+		<option value="//api/name/resendConfirmationEmailBody">resendConfirmationEmailBody</option>
+		
+		<option value="//api/name/resendConfirmationEmailSubject">resendConfirmationEmailSubject</option>
+		
+		<option value="//api/name/resendConfirmationEmailTemplate">resendConfirmationEmailTemplate</option>
+		
+		<option value="//api/name/resetPasswordEmailBody">resetPasswordEmailBody</option>
+		
+		<option value="//api/name/resetPasswordEmailSubject">resetPasswordEmailSubject</option>
+		
+		<option value="//api/name/resetPasswordEmailTemplate">resetPasswordEmailTemplate</option>
+		
+		<option value="//api/name/serviceLocation">serviceLocation</option>
+		
+		<option value="//api/name/serviceType">serviceType</option>
+		
+		<option value="//api/name/sessionName">sessionName</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALSessionParameters Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALSessionParameters.h<br />ALSessionParameters.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ALSessionParameters contains the parameters to configure the session, the default init method will initialize the
+instance with the default ALAccountCreator and <a href="../Protocols/ALDeviceCreator.html">ALDeviceCreator</a> classes.</p>
+
+<p>If you have custom creator classes they can be overriden with the accountCreator and <a href="#//api/name/deviceCreator">deviceCreator</a> properties.</p>
+
+<p>You must assign the values of all the properties.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/allowLANLogIn" title="allowLANLogIn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allowLANLogIn">&nbsp;&nbsp;allowLANLogIn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates if the app should allow the user to log in with the last valid credentials even if the cloud service is
+unavailable.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) BOOL allowLANLogIn</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates if the app should allow the user to log in with the last valid credentials even if the cloud service is
+unavailable.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loggingLevel" title="loggingLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loggingLevel">&nbsp;&nbsp;loggingLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SDK Logging level</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite) AylaSystemLoggingLevel loggingLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK Logging level</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serviceType" title="serviceType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serviceType">&nbsp;&nbsp;serviceType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Service type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite) AylaServiceType serviceType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Service type</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serviceLocation" title="serviceLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serviceLocation">&nbsp;&nbsp;serviceLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Service location</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite) AylaServiceLocation serviceLocation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Service location</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allowDSS" title="allowDSS"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allowDSS">&nbsp;&nbsp;allowDSS</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>YES if DSS should be allowed, NO by default</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite) BOOL allowDSS</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>YES if DSS should be allowed, NO by default</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/appId" title="appId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appId">&nbsp;&nbsp;appId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Application ID to use to sign in to the service</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *appId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Application ID to use to sign in to the service</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/appSecret" title="appSecret"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appSecret">&nbsp;&nbsp;appSecret</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Application secret to use to sign in to the service</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *appSecret</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Application secret to use to sign in to the service</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultCountryCode" title="defaultCountryCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultCountryCode">&nbsp;&nbsp;defaultCountryCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The defaultCountryCode will be used if when parsing a phone number, no country code was found.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *defaultCountryCode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The defaultCountryCode will be used if when parsing a phone number, no country code was found.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmAccountEmailBody" title="confirmAccountEmailBody"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmAccountEmailBody">&nbsp;&nbsp;confirmAccountEmailBody</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Custom html styling and text to be embedded in the confirmation email.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *confirmAccountEmailBody</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Custom html styling and text to be embedded in the confirmation email.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmAccountEmailSubject" title="confirmAccountEmailSubject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmAccountEmailSubject">&nbsp;&nbsp;confirmAccountEmailSubject</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Subject of the confirmation email</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *confirmAccountEmailSubject</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Subject of the confirmation email</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/confirmAccountEmailTemplate" title="confirmAccountEmailTemplate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/confirmAccountEmailTemplate">&nbsp;&nbsp;confirmAccountEmailTemplate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Template to use on the email</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *confirmAccountEmailTemplate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Template to use on the email</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resendConfirmationEmailBody" title="resendConfirmationEmailBody"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resendConfirmationEmailBody">&nbsp;&nbsp;resendConfirmationEmailBody</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Custom html styling and text to be embedded in the confirmation email.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *resendConfirmationEmailBody</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Custom html styling and text to be embedded in the confirmation email.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resendConfirmationEmailSubject" title="resendConfirmationEmailSubject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resendConfirmationEmailSubject">&nbsp;&nbsp;resendConfirmationEmailSubject</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Subject of the confirmation email</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *resendConfirmationEmailSubject</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Subject of the confirmation email</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resendConfirmationEmailTemplate" title="resendConfirmationEmailTemplate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resendConfirmationEmailTemplate">&nbsp;&nbsp;resendConfirmationEmailTemplate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Template to use on the email</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *resendConfirmationEmailTemplate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Template to use on the email</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetPasswordEmailBody" title="resetPasswordEmailBody"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetPasswordEmailBody">&nbsp;&nbsp;resetPasswordEmailBody</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Custom html styling and text to be embedded in the password reset email.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *resetPasswordEmailBody</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Custom html styling and text to be embedded in the password reset email.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetPasswordEmailSubject" title="resetPasswordEmailSubject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetPasswordEmailSubject">&nbsp;&nbsp;resetPasswordEmailSubject</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Subject of the password reset email</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *resetPasswordEmailSubject</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Subject of the password reset email</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetPasswordEmailTemplate" title="resetPasswordEmailTemplate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetPasswordEmailTemplate">&nbsp;&nbsp;resetPasswordEmailTemplate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Template to use on the email</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *resetPasswordEmailTemplate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Template to use on the email</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionName" title="sessionName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionName">&nbsp;&nbsp;sessionName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Session name</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *sessionName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Session name</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceCreator" title="deviceCreator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceCreator">&nbsp;&nbsp;deviceCreator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Object to create the Device View Models</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) id&lt;ALDeviceCreator,AylaDeviceDetailProvider&gt; deviceCreator</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Object to create the Device View Models</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/identityProvider" title="identityProvider"></a>
+	<h3 class="method-title"><code><a href="#//api/name/identityProvider">&nbsp;&nbsp;identityProvider</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If a custom identity provider should be used, this property must be set to the class implementing the logic to
+communicate with it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) id identityProvider</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If a custom identity provider should be used, this property must be set to the class implementing the logic to
+communicate with it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceSortingDescriptors" title="deviceSortingDescriptors"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceSortingDescriptors">&nbsp;&nbsp;deviceSortingDescriptors</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify the criterias by which the device list is sorted, one or more criteria can be specified. This parameter takes precedence over <a href="#//api/name/deviceSortingComparator">deviceSortingComparator</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSArray&lt;NSSortDescriptor*&gt; *deviceSortingDescriptors</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Specify the criterias by which the device list is sorted, one or more criteria can be specified. This parameter takes precedence over <a href="#//api/name/deviceSortingComparator">deviceSortingComparator</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceSortingComparator" title="deviceSortingComparator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceSortingComparator">&nbsp;&nbsp;deviceSortingComparator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specify a block by which device list can be sorted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSComparisonResult ( ^ ) ( AylaDevice *dev1 , AylaDevice *dev2 ) deviceSortingComparator</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Specify a block by which device list can be sorted.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/networkTimeoutInterval" title="networkTimeoutInterval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/networkTimeoutInterval">&nbsp;&nbsp;networkTimeoutInterval</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The timeout interval for all network calls.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite) NSTimeInterval networkTimeoutInterval</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The timeout interval for all network calls.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/)" title=")"></a>
+	<h3 class="method-title"><code><a href="#//api/name/)">&nbsp;&nbsp;)</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Password of the current user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) NSString *DEPRECATED_MSG_ATTRIBUTE ( &quot;Deprecated and will be removed in next release&quot; )</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Password of the current user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALSessionParameters.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

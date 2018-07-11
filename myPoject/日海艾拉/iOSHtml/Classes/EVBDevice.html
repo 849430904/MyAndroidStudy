@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>EVBDevice Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/deviceRegistrationType">+ deviceRegistrationType</option>
+		
+		<option value="//api/name/deviceTypeName">+ deviceTypeName</option>
+		
+		<option value="//api/name/image">+ image</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/blueButton">- blueButton</option>
+		
+		<option value="//api/name/blueLEDOn">- blueLEDOn</option>
+		
+		<option value="//api/name/deviceCellIdentifierBase">- deviceCellIdentifierBase</option>
+		
+		<option value="//api/name/deviceMaxCellHeight">- deviceMaxCellHeight</option>
+		
+		<option value="//api/name/deviceMinCellHeight">- deviceMinCellHeight</option>
+		
+		<option value="//api/name/friendlyNameForProperty:">- friendlyNameForProperty:</option>
+		
+		<option value="//api/name/greenLEDOn">- greenLEDOn</option>
+		
+		<option value="//api/name/notifiablePropertyNames">- notifiablePropertyNames</option>
+		
+		<option value="//api/name/notificationMessageForProperty:">- notificationMessageForProperty:</option>
+		
+		<option value="//api/name/propertyNames">- propertyNames</option>
+		
+		<option value="//api/name/schedulableProperties">- schedulableProperties</option>
+		
+		<option value="//api/name/schedulablePropertyNames">- schedulablePropertyNames</option>
+		
+		<option value="//api/name/setBlueLEDOn:success:failure:">- setBlueLEDOn:success:failure:</option>
+		
+		<option value="//api/name/setGreenLEDOn:success:failure:">- setGreenLEDOn:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">EVBDevice Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/AylaDeviceViewModel.html">AylaDeviceViewModel</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>EVBDevice.h<br />EVBDevice.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><a href="../Classes/AylaDeviceViewModel.html"><code>AylaDeviceViewModel</code></a> subclass to control an EVB.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/propertyNames" title="propertyNames"></a>
+	<h3 class="method-title"><code><a href="#//api/name/propertyNames">&ndash;&nbsp;propertyNames</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Optional Override</em>. It&rsquo;s suggested that you override this method to return an array of property names to poll. The
+subclasses must override this method to specify which properties will be polled for improved performance, the default
+implementation returns nil, which means all properties will be polled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)propertyNames</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSArray of NSString for each property name.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><em>Optional Override</em>. It&rsquo;s suggested that you override this method to return an array of property names to poll. The
+subclasses must override this method to specify which properties will be polled for improved performance, the default
+implementation returns nil, which means all properties will be polled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notifiablePropertyNames" title="notifiablePropertyNames"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notifiablePropertyNames">&ndash;&nbsp;notifiablePropertyNames</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an <code>NSArray</code> of <code>NSString</code> with the properties supporting notification. By default returns all pollable
+property names and if no pollable properties have been provided, returns all property names.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)notifiablePropertyNames</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an <code>NSArray</code> of <code>NSString</code> with the properties supporting notification. By default returns all pollable
+property names and if no pollable properties have been provided, returns all property names.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/schedulablePropertyNames" title="schedulablePropertyNames"></a>
+	<h3 class="method-title"><code><a href="#//api/name/schedulablePropertyNames">&ndash;&nbsp;schedulablePropertyNames</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an <code>NSArray</code> of <code>NSString</code> with the properties that support being scheduled. By default returns all pollable
+property names and if no pollable properties have been provided, returns all property names.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)schedulablePropertyNames</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an <code>NSArray</code> of <code>NSString</code> with the properties that support being scheduled. By default returns all pollable
+property names and if no pollable properties have been provided, returns all property names.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/schedulableProperties" title="schedulableProperties"></a>
+	<h3 class="method-title"><code><a href="#//api/name/schedulableProperties">&ndash;&nbsp;schedulableProperties</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array of schedulable properties for this <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a> (AylaProperty objects).
+This peroperty needs to be overridden by subclass.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)schedulableProperties</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array of schedulable properties for this <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a> (AylaProperty objects).
+This peroperty needs to be overridden by subclass.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/greenLEDOn" title="greenLEDOn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/greenLEDOn">&ndash;&nbsp;greenLEDOn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A bool value to determine if the green led is ON (YES) or off (NO).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)greenLEDOn</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A bool value to determine if the green led is ON (YES) or off (NO).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EVBDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/blueLEDOn" title="blueLEDOn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/blueLEDOn">&ndash;&nbsp;blueLEDOn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A bool value to determine if the blue led is ON (YES) or off (NO).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)blueLEDOn</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A bool value to determine if the blue led is ON (YES) or off (NO).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EVBDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/blueButton" title="blueButton"></a>
+	<h3 class="method-title"><code><a href="#//api/name/blueButton">&ndash;&nbsp;blueButton</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A bool value to determine if the blue button is currently pressed (YES) or not (NO).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)blueButton</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A bool value to determine if the blue button is currently pressed (YES) or not (NO).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EVBDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBlueLEDOn:success:failure:" title="setBlueLEDOn:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBlueLEDOn:success:failure:">&ndash;&nbsp;setBlueLEDOn:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Turns the Blue LED On/off.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBlueLEDOn:(BOOL)<em>on</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>on</code></th>
+						<td><p>Indicates whether to turn the LED on (YES) or off (NO).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the property has been successfully written, this does not confirm that the device has actually received the new property value, but just that the property has been written.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Turns the Blue LED On/off.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EVBDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setGreenLEDOn:success:failure:" title="setGreenLEDOn:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setGreenLEDOn:success:failure:">&ndash;&nbsp;setGreenLEDOn:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Turns the green LED On/off.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setGreenLEDOn:(BOOL)<em>on</em> success:(void ( ^ ) ( ))<em>success</em> failure:(void ( ^ ) ( NSError *))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>on</code></th>
+						<td><p>Indicates whether to turn the LED on (YES) or off (NO).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block called when the property has been successfully written, this does not confirm that the device has actually received the new property value, but just that the property has been written.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block called when something went wrong. Takes a single NSError parameter.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Turns the green LED On/off.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">EVBDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceCellIdentifierBase" title="deviceCellIdentifierBase"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceCellIdentifierBase">&ndash;&nbsp;deviceCellIdentifierBase</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The cell identifier is used as the reuse identifier and is used to create the name of the cell XIB according to the
+selected grid/table and static/expanding theme options.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)deviceCellIdentifierBase</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A descriptive name for the cell.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The cell identifier is used as the reuse identifier and is used to create the name of the cell XIB according to the
+selected grid/table and static/expanding theme options.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/friendlyNameForProperty:" title="friendlyNameForProperty:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/friendlyNameForProperty:">&ndash;&nbsp;friendlyNameForProperty:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Optional Override</em>. Returns a friendly name for the specified property name, you can override this method to
+provide a name suitable for the end user for instance this name will be shown when the user sets a notification up.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)friendlyNameForProperty:(AylaProperty *)<em>property</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>property</code></th>
+						<td><p>The name of the property of which the friendly name will be returned.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The friendly name of the specified property.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><em>Optional Override</em>. Returns a friendly name for the specified property name, you can override this method to
+provide a name suitable for the end user for instance this name will be shown when the user sets a notification up.</p>
+
+<p>The default behavior is to return the <code>displayName</code> first, if no display name has been provided, the method returns
+the <code>name</code> property in the <code>AylaProperty</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceTypeName" title="deviceTypeName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceTypeName">+&nbsp;deviceTypeName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Passthrough to the class <code>deviceTypeName</code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)deviceTypeName</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A string for the default name of the <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Passthrough to the class <code>deviceTypeName</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceMinCellHeight" title="deviceMinCellHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceMinCellHeight">&ndash;&nbsp;deviceMinCellHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Optional Override</em>. A CGFloat representing an optional custom minimum cell height that may be set for a device&rsquo;s
+collectionViewCell in the dashboard. Default pulls value from <a href="../Classes/ThemeSettings.html">ThemeSettings</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CGFloat)deviceMinCellHeight</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The number of pixels for the cell&rsquo;s height.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><em>Optional Override</em>. A CGFloat representing an optional custom minimum cell height that may be set for a device&rsquo;s
+collectionViewCell in the dashboard. Default pulls value from <a href="../Classes/ThemeSettings.html">ThemeSettings</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceMaxCellHeight" title="deviceMaxCellHeight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceMaxCellHeight">&ndash;&nbsp;deviceMaxCellHeight</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Optional Override</em>. A CGFloat representing an optional custom maximum cell height that may be set for a device&rsquo;s
+collectionViewCell in the dashboard. Default pulls value from <a href="../Classes/ThemeSettings.html">ThemeSettings</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CGFloat)deviceMaxCellHeight</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The number of pixels for the cell&rsquo;s height.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><em>Optional Override</em>. A CGFloat representing an optional custom maximum cell height that may be set for a device&rsquo;s
+collectionViewCell in the dashboard. Default pulls value from <a href="../Classes/ThemeSettings.html">ThemeSettings</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationMessageForProperty:" title="notificationMessageForProperty:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationMessageForProperty:">&ndash;&nbsp;notificationMessageForProperty:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a default notification Message for the property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)notificationMessageForProperty:(AylaProperty *)<em>property</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>property</code></th>
+						<td><p>The property to return a notification message for.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The notification message for the property</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a default notification Message for the property.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceRegistrationType" title="deviceRegistrationType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceRegistrationType">+&nbsp;deviceRegistrationType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the <code>ALDeviceRegistrationType</code> for this <a href="#//api/name/device">device</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (AylaRegistrationType)deviceRegistrationType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the <code>ALDeviceRegistrationType</code> for this <a href="#//api/name/device">device</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/image" title="image"></a>
+	<h3 class="method-title"><code><a href="#//api/name/image">+&nbsp;image</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an UIImage describing the <a href="#//api/name/device">device</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (UIImage *)image</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The UIImage for the <a href="#//api/name/device">device</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an UIImage describing the <a href="#//api/name/device">device</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

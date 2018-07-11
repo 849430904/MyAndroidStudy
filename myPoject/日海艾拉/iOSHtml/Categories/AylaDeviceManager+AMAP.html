@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AylaDeviceManager(AMAP) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/createGatewayDeviceSource">- createGatewayDeviceSource</option>
+		
+		<option value="//api/name/createNonGatewayDeviceSource">- createNonGatewayDeviceSource</option>
+		
+		<option value="//api/name/createOwnedDeviceSource">- createOwnedDeviceSource</option>
+		
+		<option value="//api/name/createReceivedDeviceSource">- createReceivedDeviceSource</option>
+		
+		<option value="//api/name/createRegisterableDeviceWithRegistrationType:">- createRegisterableDeviceWithRegistrationType:</option>
+		
+		<option value="//api/name/deviceForDSN:">- deviceForDSN:</option>
+		
+		<option value="//api/name/deviceManager">- deviceManager</option>
+		
+		<option value="//api/name/objectAtIndexedSubscript:">- objectAtIndexedSubscript:</option>
+		
+		<option value="//api/name/objectForKeyedSubscript:">- objectForKeyedSubscript:</option>
+		
+		<option value="//api/name/setDeviceManager:">- setDeviceManager:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AylaDeviceManager(AMAP) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/ALDeviceSource.html">ALDeviceSource</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALDeviceManager.h<br />ALDeviceManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Adds methods to create specialized <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a></p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Registering a device" name="task_Registering a device"></a>
+						<h2 class="task-title">Registering a device</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createRegisterableDeviceWithRegistrationType:" title="createRegisterableDeviceWithRegistrationType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createRegisterableDeviceWithRegistrationType:">&ndash;&nbsp;createRegisterableDeviceWithRegistrationType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and returns an AylaRegistrationCandidate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaRegistrationCandidate *)createRegisterableDeviceWithRegistrationType:(AylaRegistrationType)<em>registrationType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>registrationType</code></th>
+						<td><p>The ALDeviceRegistrationType corresponding to the device to be registered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new AylaRegistrationCandidate to register</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates and returns an AylaRegistrationCandidate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Device Sources" name="task_Device Sources"></a>
+						<h2 class="task-title">Device Sources</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createGatewayDeviceSource" title="createGatewayDeviceSource"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGatewayDeviceSource">&ndash;&nbsp;createGatewayDeviceSource</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the registered gateways.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;ALDeviceSource&gt;)createGatewayDeviceSource</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An opaque object conforming <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> of gateways registered for the user,</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the registered gateways.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/ALDeviceSource.html">ALDeviceSource</a></p></code></li>
+					
+					<li><code><p>AL<a href="../Classes/Gateway.html">Gateway</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createNonGatewayDeviceSource" title="createNonGatewayDeviceSource"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createNonGatewayDeviceSource">&ndash;&nbsp;createNonGatewayDeviceSource</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the non gateway devices.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (ALArrayDeviceSource *)createNonGatewayDeviceSource</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An opaque object conforming <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> with non gateways registered for the user,</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the non gateway devices.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createReceivedDeviceSource" title="createReceivedDeviceSource"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createReceivedDeviceSource">&ndash;&nbsp;createReceivedDeviceSource</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the received shares.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;ALDeviceSource&gt;)createReceivedDeviceSource</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An opaque object conforming <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> of devices received by the user</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the received shares.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createOwnedDeviceSource" title="createOwnedDeviceSource"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createOwnedDeviceSource">&ndash;&nbsp;createOwnedDeviceSource</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the owned devices (registered to the current user).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;ALDeviceSource&gt;)createOwnedDeviceSource</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An opaque object conforming <a href="../Protocols/ALDeviceSource.html">ALDeviceSource</a> of devices owned by the user</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will return a new <a href="../Protocols/ALDeviceSource.html"><code>ALDeviceSource</code></a> to enumerate the owned devices (registered to the current user).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setDeviceManager:" title="setDeviceManager:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDeviceManager:">&ndash;&nbsp;setDeviceManager:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The device manager is the ultimate source of the devices. This property should not be nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDeviceManager:(AylaDeviceManager *)<em>deviceManager</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The device manager is the ultimate source of the devices. This property should not be nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager" title="deviceManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager">&ndash;&nbsp;deviceManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The device manager is the ultimate source of the devices. This property should not be nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDeviceManager *)deviceManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The device manager is the ultimate source of the devices. This property should not be nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectForKeyedSubscript:" title="objectForKeyedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectForKeyedSubscript:">&ndash;&nbsp;objectForKeyedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a device with the specified DSN</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDevice *)objectForKeyedSubscript:(NSString *)<em>dsn</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dsn</code></th>
+						<td><p>The dsn of the device</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device with the matching DSN</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a device with the specified DSN</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objectAtIndexedSubscript:" title="objectAtIndexedSubscript:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objectAtIndexedSubscript:">&ndash;&nbsp;objectAtIndexedSubscript:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the device at indexPath</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDevice *)objectAtIndexedSubscript:(NSInteger)<em>idx</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>idx</code></th>
+						<td><p>The indexpath of the device</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device at the indexPath</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the device at indexPath</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceForDSN:" title="deviceForDSN:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceForDSN:">&ndash;&nbsp;deviceForDSN:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the ALDevice with the matching DSN.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AylaDevice *)deviceForDSN:(NSString *)<em>dsn</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dsn</code></th>
+						<td><p>The DSN of the wanted device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device with the matching DSN or nil if no match was found.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the ALDevice with the matching DSN.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDeviceSource.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

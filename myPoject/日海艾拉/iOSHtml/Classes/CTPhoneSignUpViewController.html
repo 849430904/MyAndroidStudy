@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CTPhoneSignUpViewController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/VerificationcodeAction:">- VerificationcodeAction:</option>
+		
+		<option value="//api/name/getUUIDString">- getUUIDString</option>
+		
+		<option value="//api/name/nextFieldAfter:">- nextFieldAfter:</option>
+		
+		<option value="//api/name/openCountdown">- openCountdown</option>
+		
+		<option value="//api/name/signUPAction:">- signUPAction:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CTPhoneSignUpViewController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/AccountViewController.html">AccountViewController</a> : UITableViewController</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CTPhoneSignUpViewController.h<br />CTPhoneSignUpViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/nextFieldAfter:" title="nextFieldAfter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/nextFieldAfter:">&ndash;&nbsp;nextFieldAfter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method returns returns the field that should follow the field passed in. The current order is as such:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UITextField *)nextFieldAfter:(UITextField *)<em>field</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>field</code></th>
+						<td><p>the current field</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>returns the next Field</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method returns returns the field that should follow the field passed in. The current order is as such:</p>
+
+<ul>
+<li><a href="../Classes/AccountViewController.html#//api/name/firstNameTextField">firstNameTextField</a></li>
+<li><a href="../Classes/AccountViewController.html#//api/name/lastNameTextField">lastNameTextField</a></li>
+<li><a href="../Classes/AccountViewController.html#//api/name/countryTextField">countryTextField</a></li>
+<li><a href="../Classes/AccountViewController.html#//api/name/phoneCountryCodeTextField">phoneCountryCodeTextField</a></li>
+<li><a href="../Classes/AccountViewController.html#//api/name/phoneTextField">phoneTextField</a></li>
+<li><a href="../Classes/AccountViewController.html#//api/name/updateEmailTextField">updateEmailTextField</a></li>
+<li><a href="../Classes/AccountViewController.html#//api/name/confirmPasswordTextField">confirmPasswordTextField</a></li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AccountViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/VerificationcodeAction:" title="VerificationcodeAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/VerificationcodeAction:">&ndash;&nbsp;VerificationcodeAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取验证码</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IBAction)VerificationcodeAction:(id)<em>sender</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取验证码</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CTPhoneSignUpViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/openCountdown" title="openCountdown"></a>
+	<h3 class="method-title"><code><a href="#//api/name/openCountdown">&ndash;&nbsp;openCountdown</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>sms/smsCode</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)openCountdown</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>sms/smsCode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CTPhoneSignUpViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUUIDString" title="getUUIDString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUUIDString">&ndash;&nbsp;getUUIDString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>回去设备的uuid当做mac地址使用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getUUIDString</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>回去设备的uuid当做mac地址使用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CTPhoneSignUpViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/signUPAction:" title="signUPAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/signUPAction:">&ndash;&nbsp;signUPAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注册按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IBAction)signUPAction:(id)<em>sender</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>注册按钮</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CTPhoneSignUpViewController.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

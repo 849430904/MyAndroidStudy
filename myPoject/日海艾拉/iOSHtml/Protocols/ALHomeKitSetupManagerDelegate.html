@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ALHomeKitSetupManagerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/homeKitSetupManager:accessoryBrowser:didFindNewAccessory:">- homeKitSetupManager:accessoryBrowser:didFindNewAccessory:</option>
+		
+		<option value="//api/name/homeKitSetupManager:accessoryBrowser:didFindUnconfiguredAccessories:">- homeKitSetupManager:accessoryBrowser:didFindUnconfiguredAccessories:</option>
+		
+		<option value="//api/name/homeKitSetupManager:accessoryBrowser:didFinishConfiguringAccessory:withStatus:">- homeKitSetupManager:accessoryBrowser:didFinishConfiguringAccessory:withStatus:</option>
+		
+		<option value="//api/name/homeKitSetupManager:accessoryBrowser:didRemoveNewAccessory:">- homeKitSetupManager:accessoryBrowser:didRemoveNewAccessory:</option>
+		
+		<option value="//api/name/homeKitSetupManager:accessoryBrowser:didRemoveUnconfiguredAccessories:">- homeKitSetupManager:accessoryBrowser:didRemoveUnconfiguredAccessories:</option>
+		
+		<option value="//api/name/homeKitSetupManager:accessoryBrowser:didUpdateState:">- homeKitSetupManager:accessoryBrowser:didUpdateState:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ALHomeKitSetupManagerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ALHomeKitSetupManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Home Kit Setup Manager Delegate</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/homeKitSetupManager:accessoryBrowser:didFindNewAccessory:" title="homeKitSetupManager:accessoryBrowser:didFindNewAccessory:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeKitSetupManager:accessoryBrowser:didFindNewAccessory:">&ndash;&nbsp;homeKitSetupManager:accessoryBrowser:didFindNewAccessory:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate about newly discoverd accessory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)homeKitSetupManager:(ALHomeKitSetupManager *)<em>setupManger</em> accessoryBrowser:(HMAccessoryBrowser *)<em>browser</em> didFindNewAccessory:(HMAccessory *)<em>accessory</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>setupManger</code></th>
+						<td><p>Sender of the message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>Current using accessory browser.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessory</code></th>
+						<td><p>New accessory that was discovered.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Informs the delegate about newly discoverd accessory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeKitSetupManager:accessoryBrowser:didRemoveNewAccessory:" title="homeKitSetupManager:accessoryBrowser:didRemoveNewAccessory:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeKitSetupManager:accessoryBrowser:didRemoveNewAccessory:">&ndash;&nbsp;homeKitSetupManager:accessoryBrowser:didRemoveNewAccessory:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate about newly removed accessory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)homeKitSetupManager:(ALHomeKitSetupManager *)<em>setupManger</em> accessoryBrowser:(HMAccessoryBrowser *)<em>browser</em> didRemoveNewAccessory:(HMAccessory *)<em>accessory</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>setupManger</code></th>
+						<td><p>Sender of the message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>Current using accessory browser.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessory</code></th>
+						<td><p>New accessory that was removed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Informs the delegate about newly removed accessory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeKitSetupManager:accessoryBrowser:didFindUnconfiguredAccessories:" title="homeKitSetupManager:accessoryBrowser:didFindUnconfiguredAccessories:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeKitSetupManager:accessoryBrowser:didFindUnconfiguredAccessories:">&ndash;&nbsp;homeKitSetupManager:accessoryBrowser:didFindUnconfiguredAccessories:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate about newly discovered wifi unconfigured accessory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)homeKitSetupManager:(ALHomeKitSetupManager *)<em>setupManger</em> accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)<em>browser</em> didFindUnconfiguredAccessories:(NSSet *)<em>accessories</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>setupManger</code></th>
+						<td><p>Sender of the message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>Current using accessory browser.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessories</code></th>
+						<td><p>Set of discovered unconfigured accessories.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Informs the delegate about newly discovered wifi unconfigured accessory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeKitSetupManager:accessoryBrowser:didRemoveUnconfiguredAccessories:" title="homeKitSetupManager:accessoryBrowser:didRemoveUnconfiguredAccessories:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeKitSetupManager:accessoryBrowser:didRemoveUnconfiguredAccessories:">&ndash;&nbsp;homeKitSetupManager:accessoryBrowser:didRemoveUnconfiguredAccessories:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate about newly discover wifi unconfigured accessory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)homeKitSetupManager:(ALHomeKitSetupManager *)<em>setupManger</em> accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)<em>browser</em> didRemoveUnconfiguredAccessories:(NSSet *)<em>accessories</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>setupManger</code></th>
+						<td><p>Sender of the message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>Current using accessory browser.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessories</code></th>
+						<td><p>Set of discovered unconfigured accessories.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Informs the delegate about newly discover wifi unconfigured accessory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeKitSetupManager:accessoryBrowser:didFinishConfiguringAccessory:withStatus:" title="homeKitSetupManager:accessoryBrowser:didFinishConfiguringAccessory:withStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeKitSetupManager:accessoryBrowser:didFinishConfiguringAccessory:withStatus:">&ndash;&nbsp;homeKitSetupManager:accessoryBrowser:didFinishConfiguringAccessory:withStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Informs the delegate about status of a newly configured accessory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)homeKitSetupManager:(ALHomeKitSetupManager *)<em>setupManger</em> accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)<em>browser</em> didFinishConfiguringAccessory:(EAWiFiUnconfiguredAccessory *)<em>accessory</em> withStatus:(EAWiFiUnconfiguredAccessoryConfigurationStatus)<em>status</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>setupManger</code></th>
+						<td><p>Sender of the message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>Current using accessory browser.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessory</code></th>
+						<td><p>Configured accessory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>Configuration status.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Informs the delegate about status of a newly configured accessory.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeKitSetupManager:accessoryBrowser:didUpdateState:" title="homeKitSetupManager:accessoryBrowser:didUpdateState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeKitSetupManager:accessoryBrowser:didUpdateState:">&ndash;&nbsp;homeKitSetupManager:accessoryBrowser:didUpdateState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sender of the message</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)homeKitSetupManager:(ALHomeKitSetupManager *)<em>setupManger</em> accessoryBrowser:(EAWiFiUnconfiguredAccessoryBrowser *)<em>browser</em> didUpdateState:(EAWiFiUnconfiguredAccessoryBrowserState)<em>state</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>browser</code></th>
+						<td><p>The EAWiFiUnconfiguredAccessoryBrowser instance generating the event.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>The current state of the EAWiFiUnconfiguredAccessoryBrowser.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>setupManager</code></th>
+						<td><p>Sender of the message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALHomeKitSetupManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
