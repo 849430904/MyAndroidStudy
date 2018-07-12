@@ -186,9 +186,9 @@
 subclassing allows you to specify custom views for different devices. Override the methods in the
 subclasses of <code>AylaDeviceViewModel</code> to add new views for each function.</p>
 
-<p>These methods are final, it&rsquo;s not adviced to override them</p>
+<p>Home Kit interface for ALDevice objects</p><div class="note"><p><strong>Note:</strong> Requires a running <a href="../Classes/ALHomeKitManager.html">ALHomeKitManager</a>.</p>
 
-<p>Home Kit interface for ALDevice objects</p><div class="note"><p><strong>Note:</strong> Requires a running <a href="../Classes/ALHomeKitManager.html">ALHomeKitManager</a>.</p></div>
+<p>These methods are final, it&rsquo;s not adviced to override them</p></div>
 					</div>
 					
 					
@@ -829,7 +829,7 @@ the <code>name</code> property in the <code>AylaProperty</code>.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Returns an UIImage describing the <a href="#//api/name/device">device</a>.</p>
+				<p>Returns an UIImage describing the <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a>.</p>
 			</div>
 			
 		    
@@ -842,7 +842,7 @@ the <code>name</code> property in the <code>AylaProperty</code>.</p>
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>The UIImage for the <a href="#//api/name/device">device</a>.</p>
+				<p>The UIImage for the <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a>.</p>
 			</div>
 			
 
@@ -851,7 +851,7 @@ the <code>name</code> property in the <code>AylaProperty</code>.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Returns an UIImage describing the <a href="#//api/name/device">device</a>.</p>
+				<p>Returns an UIImage describing the <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a>.</p>
 			</div>
 			
 
@@ -1112,7 +1112,7 @@ same name the new <a href="#//api/name/device">device</a> will be renamed with a
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Returns the <code>ALDeviceRegistrationType</code> for this <a href="#//api/name/device">device</a></p>
+				<p>Returns the <code>ALDeviceRegistrationType</code> for this <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a></p>
 			</div>
 			
 		    
@@ -1129,7 +1129,7 @@ same name the new <a href="#//api/name/device">device</a> will be renamed with a
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Returns the <code>ALDeviceRegistrationType</code> for this <a href="#//api/name/device">device</a></p>
+				<p>Returns the <code>ALDeviceRegistrationType</code> for this <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a></p>
 			</div>
 			
 
@@ -1373,7 +1373,7 @@ This peroperty needs to be overridden by subclass.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Initializes the ViewModel with the specified <a href="#//api/name/device">device</a></p>
+				<p>Initializes the ViewModel with the specified <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a></p>
 			</div>
 			
 		    
@@ -1388,7 +1388,7 @@ This peroperty needs to be overridden by subclass.</p>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>device</code></th>
-						<td><p>The <a href="#//api/name/device">device</a> to provide a ViewModel layer for.</p></td>
+						<td><p>The <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a> to provide a ViewModel layer for.</p></td>
 					</tr>
 				
 				</table>
@@ -1402,7 +1402,7 @@ This peroperty needs to be overridden by subclass.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Initializes the ViewModel with the specified <a href="#//api/name/device">device</a></p>
+				<p>Initializes the ViewModel with the specified <a href="../Classes/AylaDeviceViewModel.html#//api/name/device">device</a></p>
 			</div>
 			
 
@@ -2049,200 +2049,6 @@ implementation returns nil, which means all properties will be polled.</p>
 						</div>
 						
 
-						<a title="AMAP Methods" name="task_AMAP Methods"></a>
-						<h2 class="task-title">AMAP Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/amOwner" title="amOwner"></a>
-	<h3 class="method-title"><code><a href="#//api/name/amOwner">&nbsp;&nbsp;amOwner</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Indicates wether the receiver&rsquo;s <a href="#//api/name/device">device</a> was registered by the user associated with this session, NO if the <a href="#//api/name/device">device</a> was
-received as a share.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL amOwner</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Indicates wether the receiver&rsquo;s <a href="#//api/name/device">device</a> was registered by the user associated with this session, NO if the <a href="#//api/name/device">device</a> was
-received as a share.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sortedProperties" title="sortedProperties"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sortedProperties">&nbsp;&nbsp;sortedProperties</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>An array of the managed properties, sorted.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSArray&lt;AylaProperty*&gt; *sortedProperties</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>An array of the managed properties, sorted.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/readOnly" title="readOnly"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readOnly">&nbsp;&nbsp;readOnly</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Indicates if the <a href="#//api/name/device">device</a> is read only, for instance when offline or it was received in a share with read permission.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL readOnly</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Indicates if the <a href="#//api/name/device">device</a> is read only, for instance when offline or it was received in a share with read permission.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/isOnline" title="isOnline"></a>
-	<h3 class="method-title"><code><a href="#//api/name/isOnline">&nbsp;&nbsp;isOnline</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Indicates whether the <a href="#//api/name/device">device</a> is online or not.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL isOnline</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Indicates whether the <a href="#//api/name/device">device</a> is online or not.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
 						<a title="HomeKit Methods" name="task_HomeKit Methods"></a>
 						<h2 class="task-title">HomeKit Methods</h2>
 
@@ -2466,6 +2272,200 @@ received as a share.</p>
 </div>
 						</div>
 						
+
+						<a title="AMAP Methods" name="task_AMAP Methods"></a>
+						<h2 class="task-title">AMAP Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/amOwner" title="amOwner"></a>
+	<h3 class="method-title"><code><a href="#//api/name/amOwner">&nbsp;&nbsp;amOwner</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates wether the receiver&rsquo;s <a href="#//api/name/device">device</a> was registered by the user associated with this session, NO if the <a href="#//api/name/device">device</a> was
+received as a share.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL amOwner</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates wether the receiver&rsquo;s <a href="#//api/name/device">device</a> was registered by the user associated with this session, NO if the <a href="#//api/name/device">device</a> was
+received as a share.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sortedProperties" title="sortedProperties"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sortedProperties">&nbsp;&nbsp;sortedProperties</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of the managed properties, sorted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSArray&lt;AylaProperty*&gt; *sortedProperties</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array of the managed properties, sorted.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readOnly" title="readOnly"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readOnly">&nbsp;&nbsp;readOnly</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates if the <a href="#//api/name/device">device</a> is read only, for instance when offline or it was received in a share with read permission.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL readOnly</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates if the <a href="#//api/name/device">device</a> is read only, for instance when offline or it was received in a share with read permission.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isOnline" title="isOnline"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isOnline">&nbsp;&nbsp;isOnline</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates whether the <a href="#//api/name/device">device</a> is online or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) BOOL isOnline</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates whether the <a href="#//api/name/device">device</a> is online or not.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ALDevice+DeviceViews.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -2478,7 +2478,7 @@ received as a share.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-11</p>
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

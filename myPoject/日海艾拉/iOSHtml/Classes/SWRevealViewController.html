@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SWRevealViewController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AgileLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Ayla Networks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/clipsViewsToBounds">clipsViewsToBounds</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/draggableBorderWidth">draggableBorderWidth</option>
+		
+		<option value="//api/name/extendsPointInsideHit">extendsPointInsideHit</option>
+		
+		<option value="//api/name/frontViewController">frontViewController</option>
+		
+		<option value="//api/name/frontViewPosition">frontViewPosition</option>
+		
+		<option value="//api/name/frontViewShadowColor">frontViewShadowColor</option>
+		
+		<option value="//api/name/frontViewShadowOffset">frontViewShadowOffset</option>
+		
+		<option value="//api/name/frontViewShadowOpacity">frontViewShadowOpacity</option>
+		
+		<option value="//api/name/frontViewShadowRadius">frontViewShadowRadius</option>
+		
+		<option value="//api/name/presentFrontViewHierarchically">presentFrontViewHierarchically</option>
+		
+		<option value="//api/name/quickFlickVelocity">quickFlickVelocity</option>
+		
+		<option value="//api/name/rearViewController">rearViewController</option>
+		
+		<option value="//api/name/rearViewRevealDisplacement">rearViewRevealDisplacement</option>
+		
+		<option value="//api/name/rearViewRevealOverdraw">rearViewRevealOverdraw</option>
+		
+		<option value="//api/name/rearViewRevealWidth">rearViewRevealWidth</option>
+		
+		<option value="//api/name/replaceViewAnimationDuration">replaceViewAnimationDuration</option>
+		
+		<option value="//api/name/rightViewController">rightViewController</option>
+		
+		<option value="//api/name/rightViewRevealOverdraw">rightViewRevealOverdraw</option>
+		
+		<option value="//api/name/springDampingRatio">springDampingRatio</option>
+		
+		<option value="//api/name/toggleAnimationDuration">toggleAnimationDuration</option>
+		
+		<option value="//api/name/toggleAnimationType">toggleAnimationType</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithRearViewController:frontViewController:">- initWithRearViewController:frontViewController:</option>
+		
+		<option value="//api/name/panGestureRecognizer">- panGestureRecognizer</option>
+		
+		<option value="//api/name/pushFrontViewController:animated:">- pushFrontViewController:animated:</option>
+		
+		<option value="//api/name/revealToggle:">- revealToggle:</option>
+		
+		<option value="//api/name/revealToggleAnimated:">- revealToggleAnimated:</option>
+		
+		<option value="//api/name/tapGestureRecognizer">- tapGestureRecognizer</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SWRevealViewController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIViewController</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SWRevealViewController.h<br />SWRevealViewController.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithRearViewController:frontViewController:" title="initWithRearViewController:frontViewController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithRearViewController:frontViewController:">&ndash;&nbsp;initWithRearViewController:frontViewController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Object instance <a href="#//api/name/init">init</a> and rear view setting</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithRearViewController:(UIViewController *)<em>rearViewController</em> frontViewController:(UIViewController *)<em>frontViewController</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Object instance <a href="#//api/name/init">init</a> and rear view setting</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rearViewController" title="rearViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rearViewController">&nbsp;&nbsp;rearViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Rear view controller, can be nil if not used</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) UIViewController *rearViewController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Rear view controller, can be nil if not used</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rightViewController" title="rightViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rightViewController">&nbsp;&nbsp;rightViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Optional right view controller, can be nil if not used</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) UIViewController *rightViewController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Optional right view controller, can be nil if not used</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/frontViewController" title="frontViewController"></a>
+	<h3 class="method-title"><code><a href="#//api/name/frontViewController">&nbsp;&nbsp;frontViewController</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Front view controller, can be nil on initialization but must be supplied by the time the view is loaded</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) UIViewController *frontViewController</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Front view controller, can be nil on initialization but must be supplied by the time the view is loaded</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pushFrontViewController:animated:" title="pushFrontViewController:animated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pushFrontViewController:animated:">&ndash;&nbsp;pushFrontViewController:animated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the <a href="#//api/name/frontViewController">frontViewController</a> using a default set of chained animations consisting on moving the
+presented <a href="#//api/name/frontViewController">frontViewController</a> to the right most possition, replacing it, and moving it back to the left position</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pushFrontViewController:(UIViewController *)<em>frontViewController</em> animated:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the <a href="#//api/name/frontViewController">frontViewController</a> using a default set of chained animations consisting on moving the
+presented <a href="#//api/name/frontViewController">frontViewController</a> to the right most possition, replacing it, and moving it back to the left position</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/frontViewPosition" title="frontViewPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/frontViewPosition">&nbsp;&nbsp;frontViewPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the <a href="#//api/name/frontViewController">frontViewController</a> position. You can call the animated version several times with different
+positions to obtain a set of animations that will be performed in order one after the other.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) FrontViewPosition frontViewPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the <a href="#//api/name/frontViewController">frontViewController</a> position. You can call the animated version several times with different
+positions to obtain a set of animations that will be performed in order one after the other.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/revealToggle:" title="revealToggle:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/revealToggle:">&ndash;&nbsp;revealToggle:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The following methods are meant to be directly connected to the action method of a button
+to perform user triggered postion change of the controller views. This is ussually added to a
+button on top left or right of the <a href="#//api/name/frontViewController">frontViewController</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (IBAction)revealToggle:(id)<em>sender</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The following methods are meant to be directly connected to the action method of a button
+to perform user triggered postion change of the controller views. This is ussually added to a
+button on top left or right of the <a href="#//api/name/frontViewController">frontViewController</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/revealToggleAnimated:" title="revealToggleAnimated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/revealToggleAnimated:">&ndash;&nbsp;revealToggleAnimated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toogles the current state of the front controller between Left or Right and fully visible
+Use set<a href="../Constants/FrontViewPosition.html">FrontViewPosition</a> to set a particular position</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)revealToggleAnimated:(BOOL)<em>animated</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toogles the current state of the front controller between Left or Right and fully visible
+Use set<a href="../Constants/FrontViewPosition.html">FrontViewPosition</a> to set a particular position</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/panGestureRecognizer" title="panGestureRecognizer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/panGestureRecognizer">&ndash;&nbsp;panGestureRecognizer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The following method will provide a panGestureRecognizer suitable to be added to any view
+in order to perform usual drag and swipe gestures to reveal the rear views. This is usually added to the top bar
+of a front controller, but it can be added to your <a href="#//api/name/frontViewController">frontViewController</a> view or to the reveal controller view to provide full screen panning.
+By default, the panGestureRecognizer is added to the view containing the front controller view. To keep this default behavior
+you still need to call this method, just don&rsquo;t add it to any of your views. The default setup allows you to dissable
+user interactions on your controller views without affecting the recognizer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIPanGestureRecognizer *)panGestureRecognizer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The following method will provide a panGestureRecognizer suitable to be added to any view
+in order to perform usual drag and swipe gestures to reveal the rear views. This is usually added to the top bar
+of a front controller, but it can be added to your <a href="#//api/name/frontViewController">frontViewController</a> view or to the reveal controller view to provide full screen panning.
+By default, the panGestureRecognizer is added to the view containing the front controller view. To keep this default behavior
+you still need to call this method, just don&rsquo;t add it to any of your views. The default setup allows you to dissable
+user interactions on your controller views without affecting the recognizer.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tapGestureRecognizer" title="tapGestureRecognizer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tapGestureRecognizer">&ndash;&nbsp;tapGestureRecognizer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The following method will provide a tapGestureRecognizer suitable to be added to any view on the frontController
+for concealing the rear views. By default no tap recognizer is created or added to any view, however if you call this method after
+the controller&rsquo;s view has been loaded the recognizer is added to the reveal controller&rsquo;s front container view.
+Thus, you can disable user interactions on your <a href="#//api/name/frontViewController">frontViewController</a> view without affecting the tap recognizer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UITapGestureRecognizer *)tapGestureRecognizer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The following method will provide a tapGestureRecognizer suitable to be added to any view on the frontController
+for concealing the rear views. By default no tap recognizer is created or added to any view, however if you call this method after
+the controller&rsquo;s view has been loaded the recognizer is added to the reveal controller&rsquo;s front container view.
+Thus, you can disable user interactions on your <a href="#//api/name/frontViewController">frontViewController</a> view without affecting the tap recognizer.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rearViewRevealWidth" title="rearViewRevealWidth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rearViewRevealWidth">&nbsp;&nbsp;rearViewRevealWidth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The following properties are provided for further customization, they are set to default values on initialization,
+   you do not generally have to set them</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat rearViewRevealWidth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The following properties are provided for further customization, they are set to default values on initialization,
+   you do not generally have to set them</p>
+
+<p>Defines how much of the rear or right view is shown, default is 260.
+Negative values indicate that the reveal width should be computed by substracting the full front view width,
+so the revealed frontView width is kept constant when bounds change as opposed to the rear or right width.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rearViewRevealOverdraw" title="rearViewRevealOverdraw"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rearViewRevealOverdraw">&nbsp;&nbsp;rearViewRevealOverdraw</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines how much of an overdraw can occur when dragging further than &lsquo;rearViewRevealWidth&rsquo;, default is 60.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat rearViewRevealOverdraw</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines how much of an overdraw can occur when dragging further than &lsquo;rearViewRevealWidth&rsquo;, default is 60.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rightViewRevealOverdraw" title="rightViewRevealOverdraw"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rightViewRevealOverdraw">&nbsp;&nbsp;rightViewRevealOverdraw</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>simetric implementation of the above for the <a href="#//api/name/rightViewController">rightViewController</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat rightViewRevealOverdraw</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>simetric implementation of the above for the <a href="#//api/name/rightViewController">rightViewController</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rearViewRevealDisplacement" title="rearViewRevealDisplacement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rearViewRevealDisplacement">&nbsp;&nbsp;rearViewRevealDisplacement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Defines how much displacement is applied to the rear view when animating or dragging the front view, default is 40.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat rearViewRevealDisplacement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Defines how much displacement is applied to the rear view when animating or dragging the front view, default is 40.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/draggableBorderWidth" title="draggableBorderWidth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/draggableBorderWidth">&nbsp;&nbsp;draggableBorderWidth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines a width on the border of the view attached to the panGesturRecognizer where the gesture is allowed,
+default is 0 which means no restriction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat draggableBorderWidth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines a width on the border of the view attached to the panGesturRecognizer where the gesture is allowed,
+default is 0 which means no restriction.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/presentFrontViewHierarchically" title="presentFrontViewHierarchically"></a>
+	<h3 class="method-title"><code><a href="#//api/name/presentFrontViewHierarchically">&nbsp;&nbsp;presentFrontViewHierarchically</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If YES (default is NO) the front view controller will be ofsseted vertically by the height of a navigation bar.
+Use this on iOS7 when you add an instance of RevealViewController as a child of a UINavigationController (or another SWRevealViewController)
+and you want the front view controller to be presented below the navigation bar of its UINavigationController grand parent.
+The <a href="#//api/name/rearViewController">rearViewController</a> will still appear full size and blurred behind the navigation bar of its UINavigationController grand parent</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL presentFrontViewHierarchically</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If YES (default is NO) the front view controller will be ofsseted vertically by the height of a navigation bar.
+Use this on iOS7 when you add an instance of RevealViewController as a child of a UINavigationController (or another SWRevealViewController)
+and you want the front view controller to be presented below the navigation bar of its UINavigationController grand parent.
+The <a href="#//api/name/rearViewController">rearViewController</a> will still appear full size and blurred behind the navigation bar of its UINavigationController grand parent</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/quickFlickVelocity" title="quickFlickVelocity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/quickFlickVelocity">&nbsp;&nbsp;quickFlickVelocity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Velocity required for the controller to toggle its state based on a swipe movement, default is 250</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat quickFlickVelocity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Velocity required for the controller to toggle its state based on a swipe movement, default is 250</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toggleAnimationDuration" title="toggleAnimationDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toggleAnimationDuration">&nbsp;&nbsp;toggleAnimationDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Duration for the revealToggle animation, default is 0.25</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval toggleAnimationDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Duration for the revealToggle animation, default is 0.25</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toggleAnimationType" title="toggleAnimationType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toggleAnimationType">&nbsp;&nbsp;toggleAnimationType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Animation type, default is SWRevealToggleAnimationTypeSpring</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) SWRevealToggleAnimationType toggleAnimationType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Animation type, default is SWRevealToggleAnimationTypeSpring</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/springDampingRatio" title="springDampingRatio"></a>
+	<h3 class="method-title"><code><a href="#//api/name/springDampingRatio">&nbsp;&nbsp;springDampingRatio</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  When animation type is SWRevealToggleAnimationTypeSpring determines the damping ratio, default is 1</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat springDampingRatio</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  When animation type is SWRevealToggleAnimationTypeSpring determines the damping ratio, default is 1</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/replaceViewAnimationDuration" title="replaceViewAnimationDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/replaceViewAnimationDuration">&nbsp;&nbsp;replaceViewAnimationDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Duration for animated replacement of view controllers</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval replaceViewAnimationDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Duration for animated replacement of view controllers</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/frontViewShadowRadius" title="frontViewShadowRadius"></a>
+	<h3 class="method-title"><code><a href="#//api/name/frontViewShadowRadius">&nbsp;&nbsp;frontViewShadowRadius</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Defines the radius of the front view&rsquo;s shadow, default is 2.5f</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat frontViewShadowRadius</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Defines the radius of the front view&rsquo;s shadow, default is 2.5f</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/frontViewShadowOffset" title="frontViewShadowOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/frontViewShadowOffset">&nbsp;&nbsp;frontViewShadowOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Defines the radius of the front view&rsquo;s shadow offset default is {0.0f,2.5f}</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGSize frontViewShadowOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Defines the radius of the front view&rsquo;s shadow offset default is {0.0f,2.5f}</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/frontViewShadowOpacity" title="frontViewShadowOpacity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/frontViewShadowOpacity">&nbsp;&nbsp;frontViewShadowOpacity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Defines the front view&rsquo;s shadow opacity, default is 1.0f</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat frontViewShadowOpacity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Defines the front view&rsquo;s shadow opacity, default is 1.0f</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/frontViewShadowColor" title="frontViewShadowColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/frontViewShadowColor">&nbsp;&nbsp;frontViewShadowColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the front view&rsquo;s shadow color, default is blackColor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) UIColor *frontViewShadowColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the front view&rsquo;s shadow color, default is blackColor</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clipsViewsToBounds" title="clipsViewsToBounds"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clipsViewsToBounds">&nbsp;&nbsp;clipsViewsToBounds</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines whether the controller should clip subviews to its view bounds. Default is NO.
+Set this to YES when you are presenting this controller as a non full-screen child of a
+custom container controller which does not explicitly clips its subviews.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL clipsViewsToBounds</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines whether the controller should clip subviews to its view bounds. Default is NO.
+Set this to YES when you are presenting this controller as a non full-screen child of a
+custom container controller which does not explicitly clips its subviews.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/extendsPointInsideHit" title="extendsPointInsideHit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/extendsPointInsideHit">&nbsp;&nbsp;extendsPointInsideHit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines whether your views clicable area extends beyond the bounds of this controller. Default is NO.
+Set this to YES if you are presenting this controller as a non full-screen child of a custom container and you are not
+clipping your front view to this controller bounds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL extendsPointInsideHit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines whether your views clicable area extends beyond the bounds of this controller. Default is NO.
+Set this to YES if you are presenting this controller as a non full-screen child of a custom container and you are not
+clipping your front view to this controller bounds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The class properly handles all the relevant calls to appearance methods on the contained controllers.
+   Moreover you can assign a delegate to let the class inform you on positions and animation activity</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;SWRevealViewControllerDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The class properly handles all the relevant calls to appearance methods on the contained controllers.
+   Moreover you can assign a delegate to let the class inform you on positions and animation activity</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SWRevealViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Ayla Networks. All rights reserved. Updated: 2018-07-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
