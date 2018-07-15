@@ -4,10 +4,18 @@
 ````
 
 //登陆流程：
-_loginButton.setOnClickListener ...
+MainActivity.onResume
+ =>	MainActivity.checkLoginAndConnectivity
+	 =>MainActivity.showLoginDialog
+	   =>MainActivity.signIn(String username, String password)
+
+
+SignInActivity._loginButton.setOnClickListener ...
 =>AMAPCore.startSession
    =>AMAPCore.start
-     =>AylaNetworks.signIn    
+     =>AylaNetworks.signIn 
+       =>SignInActivity.successListener
+         =>SignInActivity.setResult(Activity.RESULT_OK);  
 
  最终会调用AMAPCore的start方法进行登陆                   
 ````
@@ -134,4 +142,19 @@ DeviceDetailFragment.onOptionsItemSelected
         => DeviceGroup.pushToServer
         
         
+````
+
+-------
+##### Android界面
+------
+
+* 首先菜单点击
+
+````
+ 点击左边菜单的时候：参考：https://blog.csdn.net/wangwangli6/article/details/70210858
+ _navigationView.setNavigationItemSelectedListener
+  =>MenuHandler.handleMenuItem(menuItem);
+     =>MenuHandler.handleMenuId
+       =>MenuHandler.replaceFragmentToRoot(XXXXXFragment.newInstance());
+ 
 ````
