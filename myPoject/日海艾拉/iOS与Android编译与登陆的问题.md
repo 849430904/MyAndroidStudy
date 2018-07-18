@@ -62,6 +62,21 @@ SKIP_INSTALL = YES
 * 运行登陆，登陆成功后如图：![](img/08.png)
 
 
+### 新版下载地址
+ 
+* Android
+
+````
+  git clone -b sunseaiot_outlet  https://support.sunseaiot.com/SunseaIoT/AMAP_Android_Public.git
+  
+````
+
+* iOS
+
+````
+  git clone -b Powersocket_sunsea  https://support.sunseaiot.com/SunseaIoT/AMAP_iOS_Public.git
+  
+````
 
  
 

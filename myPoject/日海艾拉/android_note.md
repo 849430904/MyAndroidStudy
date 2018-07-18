@@ -158,3 +158,126 @@ DeviceDetailFragment.onOptionsItemSelected
        =>MenuHandler.replaceFragmentToRoot(XXXXXFragment.newInstance());
  
 ````
+
+
+* 设备列表：AllDevicesFragment
+	* 插座设备： OutletDevice 
+* 添加设备：AddOutletDeviceFragment
+* 添加设备流程：
+
+````
+  1,扫描网络 _aylaSetup.scanForAccessPoints
+  2，扫描设备 _aylaSetup.scanForAccessPoints
+  3，连接设备 _aylaSetup.connectToNewDevice
+  4，设备配网  _aylaSetup.connectDeviceToService
+             _aylaSetup.reconnectToOriginalNetwork
+  5，绑定设备 _aylaSetup.confirmDeviceConnected
+````
+* 设备详情 OutletDetailFragment
+
+````
+   查询倒计时：_deviceModel.getDevice().fetchSchedules
+   开关： _deviceModel.setDatapoint
+   倒计时：
+      _deviceModel.getDevice().updateSchedule
+      _deviceModel.getDevice().createSchedule
+````
+
+* 定时器列表：TimingListFragment  TimingListAdapter
+
+  
+````
+   定时器获取：deviceModel.getDevice().fetchSchedules
+````
+* 定时器添加：OutletTimingFragment
+
+````
+   _deviceModel.getDevice().updateSchedule 更新
+   _deviceModel.getDevice().createSchedule 添加
+````
+
+* MoreFragment 更多
+
+````
+   _deviceModel.getDevice().updateSchedule 更新
+   _deviceModel.getDevice().createSchedule 添加
+   删除设备：deviceModel.getDevice().unregister
+   恢复出厂设置：deviceModel.getDevice().deleteSchedule 实际上清空所有schedule
+````
+
+* 分享：DeviceShareFragment
+
+````
+  authProvider.fetchUserProfileWihPhone 账号校验
+  AMAPCore.sharedInstance().getSessionManager().createShare
+````
+
+* 我的：MeFragment
+
+````
+   退出登陆：sessionManager.shutDown
+````
+* 场景：SceneFragment
+* 修改密码:ChangePasswordFragment
+
+````
+  AMAPCore.sharedInstance().getSessionManager().updatePassword //邮箱方式修改密码
+  phoneServiceAuthProvider.updatePassword 手机方式修改密码
+````
+  
+* 底部菜单 
+
+````
+   MainActivity.initBottomNavigation
+   activity_main_bottomnavigation
+   menu_bottom_navigation
+  
+   
+````
+
+83740372
+2000@qq.com
+
+##### 问题
+* 连接设备失败：如果app连接到设备，而app又提示连接失败，这种情况无论如何操作，都不会成功；
+* 有时候会绑定失败
+* 三星配网问题。在三星Galaxy Note3、Android5.0上面就经常出现连接失败，原因如下：
+* 有时候反复的点击，会出现设备状态与app状态不一致情况
+* 有时候会出现控制不了情况（很少出现）
+
+````
+
+ => AylaSetup.connectToNewDevice
+   //已经连接了，会直接进行
+   =>AylaSetup.fetchDeviceDetail  http://192.168.0.1/status.json  GET  连不通
+   因为这时网络状态还不可用，会导致http请求失败
+  
+````
+
+* 新版的设备列表界面：cardview_outlet_list
+
+* ViewModel里面的device是怎么实时更新的？
+
+````
+AllDevicesFragment 监听 DeviceChangeListener DeviceManagerListener
+
+
+AylaDSManager 负责websocket通信
+AylaDeviceManager  轮询
+````
+
+* 手机HTTP Server
+
+````
+  设备端和app端都有自己的httpServer,他们通过云端获取自己的IP
+````
+
+https://dashboard-dev.sunseaiot.com/sessions/new
+https://dashboard-dev.sunseaiot.com/sessions/new#/devices/SC000017033
+
+
+https://ads-dev.sunseaiot.com/apiv1/dsns/SC000W000017103/properties.json
+
+
+http://192.168.0.1/status.json  GET
+
