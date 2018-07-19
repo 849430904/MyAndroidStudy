@@ -281,3 +281,7 @@ https://ads-dev.sunseaiot.com/apiv1/dsns/SC000W000017103/properties.json
 
 http://192.168.0.1/status.json  GET
 
+* [色环](https://blog.csdn.net/xh870189248/article/details/78406131)
+* [顶部滑动](https://github.com/lyxRobert/Android-AppBarLayout-TabLayout-RecyclerView-ViewPager-Fragment)
+* [颜色渐变](https://blog.csdn.net/archer_zoro/article/details/37671171)
+* [动态修改Gradient](https://www.cnblogs.com/popfisher/p/5606690.html)
