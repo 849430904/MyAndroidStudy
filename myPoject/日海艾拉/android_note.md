@@ -224,6 +224,8 @@ DeviceDetailFragment.onOptionsItemSelected
   AMAPCore.sharedInstance().getSessionManager().updatePassword //邮箱方式修改密码
   phoneServiceAuthProvider.updatePassword 手机方式修改密码
 ````
+
+* 输入或修改Key:AuraConfigEditor
   
 * 底部菜单 
 
