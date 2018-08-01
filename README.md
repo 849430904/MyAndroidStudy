@@ -16,3 +16,37 @@
 ````
 
 * [Android反编译](https://github.com/onlybeyond/crack)
+
+* ConstraintLayout  [参考郭神](https://blog.csdn.net/guolin_blog/article/details/53122387) [参考2](https://blog.csdn.net/c10wtiybq1ye3/article/details/78098515)  [参考3](https://blog.csdn.net/u012538536/article/details/65042525)
+
+````
+
+layout_constraintLeft_toLeftOf
+layout_constraintLeft_toRightOf
+layout_constraintRight_toLeftOf
+layout_constraintRight_toRightOf
+layout_constraintTop_toTopOf
+layout_constraintTop_toBottomOf
+layout_constraintBottom_toTopOf layout_constraintBottom_toBottomOf
+layout_constraintBaseline_toBaselineOf
+layout_constraintStart_toEndOf
+layout_constraintStart_toStartOf
+layout_constraintEnd_toStartOf
+layout_constraintEnd_toEndOf
+    属性都形如 layout_constraintXXX_toYYYOf,这里我的理解，constraintXXX 里的 XXX 代表是这个子控件自身的哪条边(Left、Right、Top、Bottom、Baseline)， 
+    而 toYYYOf 里的 YYY 代表的是和约束控件的 哪条边 发生约束 (取值同样是 Left、Right、Top、Bottom、Baseline)。
+    当 XXX 和 YYY 相反时，表示控件自身的 XXX 在约束控件的 YYY 的一侧，例如 app:layout_constraintLeft_toRightOf="@id/button1" ，表示的是控件自身的左侧在 button1 的右侧。    当 XXX 和 YYY 相同时，表示控件自身的 XXX 和约束控件的 YYY 的一侧 对齐，例如：app:layout_constraintBottom_toBottomOf="parent"，表示控件自身底端和父控件底端对齐
+````
+
+
+* 项目部份：
+
+````
+ app异常统计：https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=20180709165613
+ APP卡顿分析工具：
+    https://github.com/markzhai/AndroidPerformanceMonitor/blob/master/README_CN.md
+    https://www.jianshu.com/p/e58992439793
+    
+````
+
+* [微信公众号「郭霖」「鸿洋」「玉刚说」历史文章的索引](https://github.com/zhuanghongji/mp-android-index)
