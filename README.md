@@ -51,4 +51,4 @@ layout_constraintEnd_toEndOf
 
 * [微信公众号「郭霖」「鸿洋」「玉刚说」历史文章的索引](https://github.com/zhuanghongji/mp-android-index)
 * [鸿洋视频](https://www.imooc.com/u/320852/courses)
-* [流式标签布局](https://blog.csdn.net/qq_33923079/article/details/53700556)
+* [流式标签布局](https://blog.csdn.net/qq_33923079/article/details/53700556)  [流式布局2](https://github.com/ykayyou/Android_FlowLayout)
