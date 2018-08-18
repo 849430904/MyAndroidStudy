@@ -272,6 +272,12 @@ AylaDeviceManager  轮询
 
 ````
   设备端和app端都有自己的httpServer,他们通过云端获取自己的IP
+  
+  ayla_reset
+  ayla_conf show
+  
+  
+  
 ````
 
 https://dashboard-dev.sunseaiot.com/sessions/new
