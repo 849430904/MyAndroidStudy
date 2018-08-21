@@ -276,7 +276,15 @@ AylaDeviceManager  轮询
   ayla_reset
   ayla_conf show
   
+  固定mac地址：txevm -e 2
   
+  bk7231-id
+  bk7231-PiWlHt_pCVgSBc_75ac-47RBnEE
+  
+  
+  修改debug日志等级：
+    1，ayla_log all
+    2，ayla_conf save
   
 ````
 
@@ -297,3 +305,38 @@ http://192.168.0.1/status.json  GET
 
 * [ios七色环拾色](https://github.com/WangMing1998/WMColorPicker)
 * * [ios七色环拾色](https://github.com/lyleLH/ColorPicker)
+
+
+* 通信流程：
+
+````
+
+   通信有三种模式：
+      Lan mode 不同步：app发消息通知设备端，设备端通过https向手机端获取指令，app返回指令。设备端执行，执行完将指令同步到云。
+      Lan mode 同步：app发消息通知设备端，设备端通过https向手机端获取指令，app返回指令。
+      iColud模式：APP发指令到云，云通过UDP通知设备端来获取指令
+      
+      Lanmode是否需要同步可以在模板里面设置
+      是否启用lanmode也可以在模板里面设置
+      
+      
+  TAG = LanModule 设备端来APP获取指令   
+  
+  LanModule：APP定时向设备端发起心跳（通过LanModule.sendLocalRegistration方法）
+            APP向设备端通过HTTP发送:{"local_reg":{"ip":"172.16.20.109","uri":"/local_lan","notify":0,"port":10275}}， notify如果为1，代表设备端需要向自己来取指令； ip表示手机的IP,port表示手机对应的端口号
+  
+  
+  本地通信流程：
+     1，APP通过HTTPS定时向设备端发送local_reg命令，如果用户有操作，就将local_reg中的notify设置1；
+     2,设备端检测到notify为1的时候，通过https向APP索取指令执行
+     3，设备端执行完以后，通过websocket将属性广播给app
+     
+  远程通信设备端：
+    1，notify: recv: op 9 notify
+    
+    
+    notify: send: sending seq 56e op 7 keep-alive 
+    
+````
+
+
