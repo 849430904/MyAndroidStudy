@@ -14,7 +14,7 @@
 *  下载最新版本（v5.8.00）的源码，下载方法：
 
 ````
-  git clone -b v5.8.00 https://support.sunseaiot.com/SunseaIoT/AMAP_iOS_Public.git
+  git clone -b sunseaiot_outlet https://support.sunseaiot.com/SunseaIoT/AMAP_Android_Public.git
   
   注意：源码一定要确保版本为：5.8.00
 ````

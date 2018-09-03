@@ -66,7 +66,10 @@ _navigationView.setNavigationItemSelectedListener(
  局域网通信：
   AylaProperty.createDatapointLAN //局域网 
     =>AylaDevice.CreateDatapointCommand //创建packet
+       AylaLanRequest => _lanCommands.add(lanCommand); //AylaLanRequest设置了URL="local"
       =>AylaLanModule.sendRequest
+        => AylaLanModule.sendRequest._lanRequestQueue
+       
          => NetThread：负责Socket(UDP)
 ````
 
@@ -285,6 +288,8 @@ AylaDeviceManager  轮询
   修改debug日志等级：
     1，ayla_log all
     2，ayla_conf save
+    
+    SC000W000018511
   
 ````
 
@@ -331,12 +336,30 @@ http://192.168.0.1/status.json  GET
      2,设备端检测到notify为1的时候，通过https向APP索取指令执行
      3，设备端执行完以后，通过websocket将属性广播给app
      
+     APP到云端查询设备端的IP,设备端通过APP 的local_reg来获取APP的端口号与IP
+     
   远程通信设备端：
     1，notify: recv: op 9 notify
     
     
     notify: send: sending seq 56e op 7 keep-alive 
     
+
+
+
+	nslookup smartplug-c46f5ac9-device.sunseaiot.com
+	Server:		202.96.134.133
+	Address:	202.96.134.133#53
+	
+	Non-authoritative answer:
+	smartplug-c46f5ac9-device.sunseaiot.com	canonical name = ads-dev.sunseaiot.com.
+	ads-dev.sunseaiot.com	canonical name = edge-ads-ssct-alb-149096517.cn-north-1.elb.amazonaws.com.cn.
+	Name:	edge-ads-ssct-alb-149096517.cn-north-1.elb.amazonaws.com.cn
+	Address: 52.80.142.112
+	Name:	edge-ads-ssct-alb-149096517.cn-north-1.elb.amazonaws.com.cn
+	Address: 52.80.21.153
+
+
 ````
 
 
