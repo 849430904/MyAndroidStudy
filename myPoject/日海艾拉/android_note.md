@@ -239,8 +239,8 @@ DeviceDetailFragment.onOptionsItemSelected
   
    
 ````
-
-83740372   belon83740860
+ 
+83740372   YFceshi:belon83740860      zhuanyongtest
 2000@qq.com
 
 ##### 问题
@@ -278,7 +278,8 @@ AylaDeviceManager  轮询
   
   ayla_reset
   ayla_conf show
-  
+  ayla_reset factory
+
   固定mac地址：txevm -e 2
   
   bk7231-id
