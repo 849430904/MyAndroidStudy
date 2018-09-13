@@ -59,3 +59,11 @@ layout_constraintEnd_toEndOf
 新手引导视图](https://github.com/qiushi123/GuideView-master)
 
 * [Android FPS 内存监控](https://github.com/lyric315/UIPerforance)
+
+
+------
+
+# 开发常用框架
+* [de.hdodenhof:circleimageview:2.2.0 圆角图片处理](https://github.com/hdodenhof/CircleImageView)
+* [uCrop图片裁剪demo](https://github.com/asia-meidia/UcropDemo-master)
+* [com.bigkoo:svprogresshud:1.0.6](https://github.com/Bigkoo/Android-SVProgressHUD)
