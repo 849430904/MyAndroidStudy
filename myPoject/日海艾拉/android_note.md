@@ -289,7 +289,7 @@ AylaDeviceManager  轮询
   修改debug日志等级：
     1，ayla_log all
     2，ayla_conf save
-    
+  
     SC000W000018511
   
 ````
@@ -347,6 +347,12 @@ http://192.168.0.1/status.json  GET
     
 
 
+   本地通信流程：
+     1，发送Request到本地http server
+        _aylaLocalNetwork = new AylaLocalNetwork(new BasicNetwork(new HurlStack()));
+        _lanRequestQueue = new RequestQueue(cache, _aylaLocalNetwork);//指明由AylaLocalNetwork处理
+     2,发送notify到设备端
+     3，设置过来取指令
 
 	nslookup smartplug-c46f5ac9-device.sunseaiot.com
 	Server:		202.96.134.133

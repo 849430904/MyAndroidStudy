@@ -39,7 +39,11 @@
      ThemeSettings.configureViewControllersWithSession
      
  CTMenuTableViewController:左侧菜单控制器
- DashboardCollectionViewController：设备控制列表    
+ DashboardCollectionViewController：设备控制列表   
+ ScenarioViewController:虚拟场景
+ MyInfoViewController：我的
+ 
+  
 ````
 
 
