@@ -67,5 +67,30 @@
 
 ````
 
+* 设备配网
+
+````
+   AddDeviceFinishViewController
+   appDelegate.setup = _setup;
+   
+   
+   AMAP公版：
+   WiFiSetupInstructionsViewController  continueToWifiSelection
+   WiFiSetupTableViewController => WiFiConnectTableViewCell.connectAction =>WiFiConnectTableViewCell.didTapWiFiConnectInCell =>self.model connectToAccessPoint => [task start] => [module addTask:self] =>  [self sendExtensionMessageWithCompletionBlock:nil];
+
+````
+
+* 通信相关
+
+````
+  AylaLanCommand:配置了本地的接口处理方法
+  
+  AylaHTTPServer.httpResponseForMethod
+     =>AylaLanModule. httpServer:(AylaHTTPServer *)server
+                     didReceiveRequest:(AylaHTTPServerRequest *)request 
+        => AylaLanModule.responseOfNextCommand            
+
+````
+
 
 * [Reaveal 破解](https://www.jianshu.com/p/27f1951d6004)
