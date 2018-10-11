@@ -311,6 +311,9 @@ http://192.168.0.1/status.json  GET
 
 * [ios七色环拾色](https://github.com/WangMing1998/WMColorPicker)
 * * [ios七色环拾色](https://github.com/lyleLH/ColorPicker)
+* [colorpikcer](https://github.com/kartech/colorpicker)
+* [ios渐变](http://www.cocoachina.com/ios/20161009/17704.html)
+* [参考圆环](https://github.com/ZhangDo/ColorPicker)
 
 
 * 通信流程：
