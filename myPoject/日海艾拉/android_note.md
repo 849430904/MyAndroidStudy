@@ -314,6 +314,7 @@ http://192.168.0.1/status.json  GET
 * [colorpikcer](https://github.com/kartech/colorpicker)
 * [ios渐变](http://www.cocoachina.com/ios/20161009/17704.html)
 * [参考圆环](https://github.com/ZhangDo/ColorPicker)
+* [iOS纯代码绘制色环](https://www.jianshu.com/p/8c5ae5016360)
 
 
 * 通信流程：
@@ -370,6 +371,11 @@ http://192.168.0.1/status.json  GET
 	Address: 52.80.21.153
 
 
+
+````
+
+````
+ TestFlight https://www.jianshu.com/p/c6411fbe5781
 ````
 
 
