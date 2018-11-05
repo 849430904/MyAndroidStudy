@@ -276,6 +276,12 @@ AylaDeviceManager  轮询
 ````
   设备端和app端都有自己的httpServer,他们通过云端获取自己的IP
   
+  美国域：
+     管理员：2000@qq.com  密码：12345678@@Zj
+     https://dashboard-dev.aylanetworks.com/#/oem/30476
+  
+  中国域：https://dashboard-dev.sunseaiot.com/#/devices
+  
   ayla_reset
   ayla_conf show
   ayla_reset factory
@@ -290,6 +296,8 @@ AylaDeviceManager  轮询
     1，ayla_log all
     2，ayla_conf save
   
+  固化mac:
+  txevm -e 2
     SC000W000018511
   
 ````
