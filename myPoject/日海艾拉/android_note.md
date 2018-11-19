@@ -279,12 +279,29 @@ AylaDeviceManager  轮询
   美国域：
      管理员：2000@qq.com  密码：12345678@@Zj
      https://dashboard-dev.aylanetworks.com/#/oem/30476
-  
-  中国域：https://dashboard-dev.sunseaiot.com/#/devices
+     
+     https://developer.aylanetworks.com/sign_in
+   
+  欧洲域：
+	  管理员：2000@qq.com  密码：12345678@@Zj
+	  https://dashboard-dev.aylanetworks.com/#/oem_users
+	  https://dashboard-eu.aylanetworks.com/#/oem_users
+	 
+	  https://developer.aylanetworks.com/sign_in  
+     
+  中国域：
+    量产域：f8bbfaf8
+    https://dashboard-dev.sunseaiot.com/#/devices
   
   ayla_reset
   ayla_conf show
   ayla_reset factory
+  
+  修改debug日志等级：
+    1，ayla_log all
+    2，ayla_conf save
+  
+  15552000(半年)
 
   固定mac地址：txevm -e 2
   
@@ -292,13 +309,17 @@ AylaDeviceManager  轮询
   bk7231-PiWlHt_pCVgSBc_75ac-47RBnEE
   
   
-  修改debug日志等级：
-    1，ayla_log all
-    2，ayla_conf save
+  AylaSystemUtils
+  AylaHTTPClient baseURL
+  
+ 
   
   固化mac:
   txevm -e 2
     SC000W000018511
+    
+    
+    _lanModePermitted = NO;
   
 ````
 
@@ -370,20 +391,22 @@ http://192.168.0.1/status.json  GET
 	Server:		202.96.134.133
 	Address:	202.96.134.133#53
 	
-	Non-authoritative answer:
-	smartplug-c46f5ac9-device.sunseaiot.com	canonical name = ads-dev.sunseaiot.com.
-	ads-dev.sunseaiot.com	canonical name = edge-ads-ssct-alb-149096517.cn-north-1.elb.amazonaws.com.cn.
-	Name:	edge-ads-ssct-alb-149096517.cn-north-1.elb.amazonaws.com.cn
-	Address: 52.80.142.112
-	Name:	edge-ads-ssct-alb-149096517.cn-north-1.elb.amazonaws.com.cn
-	Address: 52.80.21.153
-
+	
+	
+	DeviceManager.fetchDevices
+	    mergeDevices
+	      fetchNextDeviceProperties
+	         fetchLanConfig //关键
+   AylaDevice.startLanSession //开启lan
 
 
 ````
 
 ````
  TestFlight https://www.jianshu.com/p/c6411fbe5781
+ 
+ http://www.anzhi.com/pkg/3ef4_com.sunseaiot.plug.html
+
 ````
 
 
