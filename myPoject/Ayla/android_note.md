@@ -241,7 +241,11 @@ DeviceDetailFragment.onOptionsItemSelected
 ````
  
 83740372   YFceshi:belon83740860      zhuanyongtest
+
+Jackson_test pwd:bleon123
 2000@qq.com
+
+路由：wireless 66666666
 
 ##### 问题
 * 连接设备失败：如果app连接到设备，而app又提示连接失败，这种情况无论如何操作，都不会成功；
@@ -274,13 +278,19 @@ AylaDeviceManager  轮询
 * 手机HTTP Server
 
 ````
+AC000W006310773
+
   设备端和app端都有自己的httpServer,他们通过云端获取自己的IP
   
   美国域：
      管理员：2000@qq.com  密码：12345678@@Zj
-     https://dashboard-dev.aylanetworks.com/#/oem/30476
-     
-     https://developer.aylanetworks.com/sign_in
+     美国开发域:
+	       https://dashboard-dev.aylanetworks.com/#/oem/30476
+	       https://developer.aylanetworks.com/sign_in     
+     美国量产域：    
+	      开发者网站:  https://developer.aylanetworks.com/
+	      开发管理平台：https://dashboard-dev.aylanetworks.com
+	      量产域管理平台：https://dashboard.aylanetworks.com
    
   欧洲域：
 	  管理员：2000@qq.com  密码：12345678@@Zj
@@ -292,15 +302,22 @@ AylaDeviceManager  轮询
   中国域：
     量产域：f8bbfaf8
     https://dashboard-dev.sunseaiot.com/#/devices
+    
+    xdx@belon.cn Xdx12345678
   
   ayla_reset
   ayla_conf show
-  ayla_reset factory
+  ayla_reset factory 清掉信息并重启
+  ayla_show wifi
   
   修改debug日志等级：
     1，ayla_log all
     2，ayla_conf save
   
+  BK7231-Test 
+  belon123
+  
+  AC000W006312123
   15552000(半年)
 
   固定mac地址：txevm -e 2
@@ -320,6 +337,8 @@ AylaDeviceManager  轮询
     
     
     _lanModePermitted = NO;
+    
+    AylaDSManager 负责websocket
   
 ````
 
@@ -408,5 +427,7 @@ http://192.168.0.1/status.json  GET
  http://www.anzhi.com/pkg/3ef4_com.sunseaiot.plug.html
 
 ````
+
+bleon-smartHome
 
 
