@@ -67,3 +67,11 @@ layout_constraintEnd_toEndOf
 * [de.hdodenhof:circleimageview:2.2.0 圆角图片处理](https://github.com/hdodenhof/CircleImageView)
 * [uCrop图片裁剪demo](https://github.com/asia-meidia/UcropDemo-master)
 * [com.bigkoo:svprogresshud:1.0.6](https://github.com/Bigkoo/Android-SVProgressHUD)
+
+
+#### [adb常用命令](https://github.com/mzlogin/awesome-adb)
+
+````
+adb命令 : adb shell am start -S -W 包名/启动类的全限定名 ， -S 表示重启当前应用
+
+````
